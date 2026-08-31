@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A held-out-client study of which content pages should be reviewed first for possible refresh work.">
+  <title>Which Content Pages Should Be Reviewed First?</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="hero">
+    <div class="wrap">
+      <p class="eyebrow">Machine Learning Capstone · Yassin Khodir</p>
+      <h1>Which content pages should be reviewed first?</h1>
+      <p class="lede">A simple refresh-opportunity ranking study using a mid-panel month of pseudonymized search data.</p>
+      <div class="facts" aria-label="Study summary">
+        <div><strong>9.84M</strong><span>March daily rows checked</span></div>
+        <div><strong>77,400</strong><span>eligible page records</span></div>
+        <div><strong>38</strong><span>represented clients</span></div>
+        <div><strong>0.510</strong><span>held-out-client ROC-AUC</span></div>
+      </div>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section id="abstract">
+      <h2>Abstract</h2>
+      <p>Which established pages should a content editor review first when review capacity is limited? I studied the March 2026 partition of the FlyRank internship warehouse, using March 1–15 signals and a March 16–31 decline outcome. A fixed rule was compared with a five-feature logistic regression on clients excluded from training. On that held-out group, model precision@100 measured 0.310, compared with 0.150 for the fixed rule and a 0.233 outcome base rate; overall ROC-AUC was only 0.510. The result supports a small human-reviewed priority queue, not automatic content changes or a claim that refreshing causes recovery.</p>
+    </section>
+
+    <section id="problem">
+      <h2>Introduction / Problem statement</h2>
+      <p>An editor may have thousands of pages but time to inspect only a small batch. The decision is not “which pages must be refreshed?” It is “which pages deserve attention first?” A wrong high-priority recommendation wastes review time, while a missed page can leave a meaningful opportunity unnoticed.</p>
+      <p>The output is a ranked page queue with a score, reason code, and suggested review action. A human checks search intent, business value, content quality, seasonality, cannibalization, technical issues, and editing cost before choosing any action.</p>
+    </section>
+
+    <section id="data">
+      <h2>Data</h2>
+      <p>The source is the pseudonymized FlyRank ML Internship warehouse release. The full daily-performance table contains about 78.8 million rows; this study used its March 2026 partition, which contains 9,841,378 daily rows. The page-level frame contains 77,400 eligible records from 38 represented clients.</p>
+      <p>Features use March 1–15 only. The observed label uses March 16–31 and equals 1 when average daily impressions fall by more than 20% from the early window. Pages need at least 100 early impressions, an available GSC flag, and an observed later-window row.</p>
+      <p>I excluded later-window values, product flags, client and content IDs as features, GA4 fields with uneven coverage, raw queries, domains, URLs, and all identifying fields. The IDs are used only to group and split rows.</p>
+    </section>
+
+    <section id="method">
+      <h2>Methodology</h2>
+      <p>The five features are early log impressions, CTR, active days, average position, and position volatility. The fixed baseline assigns points for search volume and positions 4–50, with the most position points going to positions 21–50. The learned model is logistic regression with median imputation and standardization.</p>
+      <p>The final validation holds out entire clients: 28 clients for training and 10 for testing, using seed 42. This tests transfer to a client not seen during fitting. A random page split produced ROC-AUC 0.594, but the grouped split produced 0.510, showing that randomly mixed pages made the model look stronger.</p>
+      <p>The leakage audit draws a strict timeline: early features, decision moment, later label. Adding a deliberate copy of the label produced ROC-AUC 1.000; that column was deleted. No label-derived, future-window, product-decision, or ID field remains in the model.</p>
+    </section>
+
+    <section id="results">
+      <h2>Results</h2>
+      <p>The logistic score improved the first 100 review slots on this held-out group, but its broad ranking ability remained weak.</p>
+      <div class="chart" role="img" aria-label="Precision at 100: base rate 0.233, frozen rule 0.150, logistic model 0.310">
+        <div class="bar-row"><span>Held-out base rate</span><div class="track"><i class="bar neutral" style="width:64.7%"></i></div><strong>0.233</strong></div>
+        <div class="bar-row"><span>Frozen rule</span><div class="track"><i class="bar purple" style="width:41.7%"></i></div><strong>0.150</strong></div>
+        <div class="bar-row"><span>Logistic model</span><div class="track"><i class="bar green" style="width:86.1%"></i></div><strong>0.310</strong></div>
+        <p class="caption">Precision@100 on the same 15,776 held-out rows. The base rate is shown for context.</p>
+      </div>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Method</th><th>Precision@10</th><th>Precision@50</th><th>Precision@100</th><th>ROC-AUC</th></tr></thead>
+          <tbody>
+            <tr><td>Base rate</td><td>0.233</td><td>0.233</td><td>0.233</td><td>0.500</td></tr>
+            <tr><td>Frozen rule</td><td>0.300</td><td>0.260</td><td>0.150</td><td>0.430</td></tr>
+            <tr><td>Logistic regression</td><td>0.600</td><td>0.340</td><td>0.310</td><td>0.510</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>CTR had the largest standardized coefficient, followed by average position. The model also produced confident false negatives, especially among pages with strong CTR and good positions. That is a reminder that short-window search behavior, client context, and seasonality are not fully represented by these five fields.</p>
+    </section>
+
+    <section id="limits">
+      <h2>Limitations &amp; honest framing</h2>
+      <ul>
+        <li>One mid-panel month is not every season or client portfolio.</li>
+        <li>Only 10 clients appear in the held-out evaluation.</li>
+        <li>The eligible population requires observations in both halves of March, which can favor consistently tracked pages.</li>
+        <li>The later-decline label measures movement, not the value of a refresh.</li>
+        <li>No controlled intervention was run, so the analysis cannot claim that refreshing causes recovery.</li>
+        <li>Precision@10 is based on only ten rows and should not be treated as a stable headline.</li>
+      </ul>
+      <p>The safe claim is narrow: on one held-out-client split, the learned score ordered the first 100 rows better than the fixed rule, while overall discrimination was weak.</p>
+    </section>
+
+    <section id="recommendations">
+      <h2>Ranked recommendations</h2>
+      <ol class="steps">
+        <li><strong>Review high-priority rows first.</strong> Check demand, intent, quality, cannibalization, technical status, and business value.</li>
+        <li><strong>Use the reason code as a starting question.</strong> Low CTR suggests a title/snippet/intent check; positions 21–50 suggest a depth and internal-link review; unstable positions suggest waiting.</li>
+        <li><strong>Estimate cost before rewriting.</strong> A large edit needs stronger evidence than a short diagnostic review.</li>
+        <li><strong>Monitor the queue.</strong> Pause if precision@100 falls below the outcome base rate twice, feature missingness exceeds 10%, or editor rejection exceeds 50% for two batches.</li>
+      </ol>
+      <div class="callout"><strong>Never automate from this score:</strong> publishing, deleting, merging, redirecting, metadata changes, recrawl requests, or claims of expected ranking lift.</div>
+    </section>
+
+    <section id="reproducibility">
+      <h2>Reproducibility</h2>
+      <p>The notebooks, executed outputs, aggregate metric receipts, and fixed seed are in the public repository. The analysis can be followed in order from the data contract through the validation audit and action playbook.</p>
+      <div class="links">
+        <a href="https://github.com/YassinKhodir/yassin-flyrank-ml-internship">Repository</a>
+        <a href="https://github.com/YassinKhodir/yassin-flyrank-ml-internship/blob/main/work/notebooks/w03_data_contract.ipynb">Data contract</a>
+        <a href="https://github.com/YassinKhodir/yassin-flyrank-ml-internship/blob/main/work/notebooks/w05_model.ipynb">Model notebook</a>
+        <a href="https://github.com/YassinKhodir/yassin-flyrank-ml-internship/blob/main/work/notebooks/w06_validation_audit.ipynb">Validation audit</a>
+        <a href="https://github.com/YassinKhodir/yassin-flyrank-ml-internship/blob/main/work/notebooks/w07_action_playbook.ipynb">Action playbook</a>
+        <a href="https://github.com/YassinKhodir/yassin-flyrank-ml-internship/blob/main/work/notebooks/capstone.ipynb">Capstone notebook</a>
+      </div>
+      <p>Core environment: Python 3.12, DuckDB, pandas, scikit-learn, and a fixed split seed of 42. Raw warehouse data and generated row-level queues are not committed.</p>
+    </section>
+
+    <section id="credit">
+      <h2>Acknowledgments &amp; data credit</h2>
+      <p>Built on the <a href="https://flyrank.ai">FlyRank ML Internship dataset</a>. Thanks to the FlyRank internship team for the pseudonymized warehouse, notebook skeletons, and public-safety guidance.</p>
+    </section>
+  </main>
+
+  <footer><div class="wrap">Yassin Khodir · Refresh / Content Opportunity Scoring · 2026</div></footer>
+</body>
+</html>
