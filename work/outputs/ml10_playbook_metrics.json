@@ -1,0 +1,10 @@
+{
+  "queue_rows": 15776,
+  "held_out_clients": 10,
+  "high_priority_rows": 789,
+  "medium_priority_rows": 2367,
+  "monitor_rows": 12620,
+  "high_priority_cutoff": 0.455889,
+  "medium_priority_cutoff": 0.420422,
+  "grouped_model_roc_auc": 0.509776
+}
