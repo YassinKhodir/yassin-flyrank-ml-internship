@@ -1,0 +1,9 @@
+{
+  "random_split_roc_auc": 0.593642,
+  "grouped_split_roc_auc": 0.509776,
+  "deliberate_leak_roc_auc": 1.0,
+  "grouped_test_base_rate": 0.233266,
+  "grouped_baseline_precision_at_100": 0.15,
+  "grouped_model_precision_at_100": 0.31,
+  "grouped_test_clients": 10
+}

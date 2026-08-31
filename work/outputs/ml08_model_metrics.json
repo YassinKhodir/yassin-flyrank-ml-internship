@@ -5,7 +5,7 @@
   "train_clients": 28,
   "test_clients": 10,
   "test_base_rate": 0.233266,
-  "baseline_precision_at_100": 0.22,
+  "baseline_precision_at_100": 0.15,
   "model_precision_at_100": 0.31,
   "model_roc_auc": 0.509776
 }
