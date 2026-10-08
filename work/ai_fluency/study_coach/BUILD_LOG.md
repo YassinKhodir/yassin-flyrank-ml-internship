@@ -26,6 +26,12 @@ AI-assisted work. Entries describe observed work, not student attendance or hour
 - Deferred practice-question quality, model citation checking, and the demo
   until a real model can run. Mock mode returns excerpts, not generated lessons.
 
+7. Reviewed Anthropic's workflow-versus-agent distinction while checking
+   FL-05. The current fixed path is a workflow. A model-directed tool loop is
+   still needed before presenting it as a full agent.
+8. Prepared a six-version Prompt Ladder runner. It saves actual model outputs
+   and leaves human comparisons unfilled. No real six-run experiment is claimed.
+
 ## Remaining evidence
 
 Real model outputs, the student's five-case review, and a raw screen recording.
