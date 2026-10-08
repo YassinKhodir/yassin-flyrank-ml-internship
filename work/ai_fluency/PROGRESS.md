@@ -6,7 +6,7 @@ All new code and documents are AI-assisted. No student time has been entered.
 | --- | --- | --- |
 | FL-01: workflow audit and setup | Simple Week 1 workbook prepared separately | Student confirms real weekly tasks; tool setup and course-module evidence |
 | FL-06: personal agent design | Design file submitted to FlyRank; waiting for review | Student review and any reviewer changes |
-| FL-07: build the agent | Study-coach prototype, eight passing tests, mock file-to-result run, build log | Live model run, agent behavior, human evaluation, raw demo |
+| FL-07: build the agent | Study-coach prototype, twelve passing tests, bounded tool loop, mock file-to-result run, build log | Live model run, human evaluation, raw demo |
 | Prompt Ladder | Six cumulative starter prompts and local-model runner prepared | Six real model outputs, student's comparison notes, final prompt |
 | Portfolio sitemap | Requirements inspected | Real project configuration, sketch, pressure test and user decisions |
 | What Are You Proving? | Requirements inspected | Student's own narrow claim, specific audience, action and why |
@@ -14,11 +14,11 @@ All new code and documents are AI-assisted. No student time has been entered.
 
 ## Understand the current build
 
-The study-coach prototype follows a fixed read/search/model path. Under the
-workflow-versus-agent distinction in the FL-05 reading, this is a workflow,
-not yet a model-directed agent. Before claiming FL-07 is complete, add and test
-a bounded loop where the model chooses a note-search tool, sees its result,
-and decides whether to search again, answer, or ask for clarification.
+The first prototype followed a fixed read/search/model path. After reviewing
+the FL-05 distinction, a small model-directed loop was added. The model can
+choose a note search, see its result, and search again, answer, or ask a question.
+Only simulated model decisions have been tested. Real model behavior must
+still be checked before claiming FL-07 is complete.
 
 Anthropic reference: https://www.anthropic.com/engineering/building-effective-agents
 
@@ -56,6 +56,6 @@ The signed original application ended September 30; confirm any extension.
 
 ## Repository checks
 
-Eight local study-coach tests passed. The repository's smoke-test workflow
+Twelve local study-coach tests passed. The repository's smoke-test workflow
 also completed successfully for the initial prototype commit. This does not
 verify live AI behavior or student hours.

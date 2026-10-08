@@ -4,10 +4,14 @@ test_existing_output_preserved (test_coach.CoachTests.test_existing_output_prese
 test_leakage_retrieval_keeps_heading (test_coach.CoachTests.test_leakage_retrieval_keeps_heading) ... ok
 test_missing_topic_does_not_call_model (test_coach.CoachTests.test_missing_topic_does_not_call_model) ... ok
 test_model_adapter_request_and_response (test_coach.CoachTests.test_model_adapter_request_and_response) ... ok
+test_model_can_choose_search_then_answer (test_coach.CoachTests.test_model_can_choose_search_then_answer) ... ok
+test_model_cannot_choose_other_tools (test_coach.CoachTests.test_model_cannot_choose_other_tools) ... ok
+test_model_cannot_skip_reading (test_coach.CoachTests.test_model_cannot_skip_reading) ... ok
+test_model_loop_stops (test_coach.CoachTests.test_model_loop_stops) ... ok
 test_symlink_cannot_read_outside_notes (test_coach.CoachTests.test_symlink_cannot_read_outside_notes) ... ok
 test_unsafe_note_not_sent (test_coach.CoachTests.test_unsafe_note_not_sent) ... ok
 
 ----------------------------------------------------------------------
-Ran 8 tests in 0.005s
+Ran 12 tests in 0.007s
 
 OK

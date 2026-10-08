@@ -10,7 +10,8 @@ explain them. No external accounts or Python packages are needed for mock mode.
 - Passage matching with source headings.
 - A clearly labeled mock mode that returns excerpts.
 - A local Ollama adapter, checked with a simulated HTTP response.
-- Eight automated tests and one successful mock command-line run.
+- A small loop where the model can choose a note search, an answer, or a question.
+- Twelve automated tests and one successful mock command-line run.
 
 ## What is still missing?
 
@@ -32,7 +33,7 @@ python -m unittest discover -s tests -v
 
 If your machine uses `python3`, replace `python` with `python3`.
 The first command prints a passage with its heading. It says MOCK MODE because
-no AI model runs. The tests should say eight tests passed.
+no AI model runs. The tests should say twelve tests passed.
 
 ## Use a real local model
 
@@ -76,6 +77,11 @@ mock tests check the program's structure, not the model's teaching quality.
 3. `make_messages` puts the rules and note passages into the model request.
 4. `ollama` sends the request to the model running on your own computer.
 5. `save_new` saves the result only if the filename is new.
+
+In live mode, `agent_loop` lets the model choose what to do next. It can search
+the notes, answer, or ask you a question. It gets at most four turns. It cannot
+send emails or open other files. An answer must follow a search and name at
+least one retrieved heading. That check does not prove every sentence is correct.
 
 CLI means command-line interface: you type a command instead of clicking a
 button. API means application programming interface: a way for programs to

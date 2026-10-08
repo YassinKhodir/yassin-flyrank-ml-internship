@@ -32,6 +32,12 @@ AI-assisted work. Entries describe observed work, not student attendance or hour
 8. Prepared a six-version Prompt Ladder runner. It saves actual model outputs
    and leaves human comparisons unfilled. No real six-run experiment is claimed.
 
+9. Added a bounded model-directed tool loop after identifying the workflow
+   limitation. The model can search notes, answer, or ask for clarification.
+   Added four tests covering search-to-answer, premature answers, disallowed
+   tools, and the four-turn limit. All twelve tests passed. Model choices in
+   these tests are simulated; this is not a live AI evaluation.
+
 ## Remaining evidence
 
 Real model outputs, the student's five-case review, and a raw screen recording.

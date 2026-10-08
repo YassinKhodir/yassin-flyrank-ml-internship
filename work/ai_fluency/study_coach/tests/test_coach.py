@@ -70,5 +70,30 @@ class CoachTests(unittest.TestCase):
         self.assertEqual(body["model"], "local-test")
 
 
+    def test_model_can_choose_search_then_answer(self):
+        choices = ['{"action":"search_notes","query":"data leakage"}',
+                   '{"action":"answer","text":"Data leakage: future information sneaks into training."}']
+        with patch("coach.ollama", side_effect=choices):
+            result = coach.answer(self.notes, "Explain data leakage", "ollama", "test")
+        self.assertEqual([s["action"] for s in result["steps"]], ["search_notes", "answer"])
+        self.assertEqual(result["sources"][0]["heading"], "Data leakage")
+
+    def test_model_cannot_skip_reading(self):
+        with patch("coach.ollama", return_value='{"action":"answer","text":"guess"}'):
+            with self.assertRaisesRegex(RuntimeError, "before reading"):
+                coach.answer(self.notes, "Explain CTR", "ollama", "test")
+
+    def test_model_cannot_choose_other_tools(self):
+        with patch("coach.ollama", return_value='{"action":"send_email"}'):
+            with self.assertRaisesRegex(RuntimeError, "not allowed"):
+                coach.answer(self.notes, "Explain CTR", "ollama", "test")
+
+    def test_model_loop_stops(self):
+        with patch("coach.ollama", return_value='{"action":"search_notes","query":"CTR"}') as model:
+            with self.assertRaisesRegex(RuntimeError, "four model turns"):
+                coach.answer(self.notes, "Explain CTR", "ollama", "test")
+        self.assertEqual(model.call_count, 4)
+
+
 if __name__ == "__main__":
     unittest.main()
