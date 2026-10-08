@@ -1,0 +1,13 @@
+test_conflicting_dates_both_retrieved (test_coach.CoachTests.test_conflicting_dates_both_retrieved) ... ok
+test_ctr_retrieval_keeps_formula (test_coach.CoachTests.test_ctr_retrieval_keeps_formula) ... ok
+test_existing_output_preserved (test_coach.CoachTests.test_existing_output_preserved) ... ok
+test_leakage_retrieval_keeps_heading (test_coach.CoachTests.test_leakage_retrieval_keeps_heading) ... ok
+test_missing_topic_does_not_call_model (test_coach.CoachTests.test_missing_topic_does_not_call_model) ... ok
+test_model_adapter_request_and_response (test_coach.CoachTests.test_model_adapter_request_and_response) ... ok
+test_symlink_cannot_read_outside_notes (test_coach.CoachTests.test_symlink_cannot_read_outside_notes) ... ok
+test_unsafe_note_not_sent (test_coach.CoachTests.test_unsafe_note_not_sent) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 0.005s
+
+OK
