@@ -1,61 +1,48 @@
-# AI Fluency work status — October 8, 2026
+# AI Fluency work status - October 12, 2026
 
 All new code and documents are AI-assisted. No student time has been entered.
+The portal was checked after today's submissions: **AI Fluency 3/5 qualifying assignments; capstone not submitted.**
+This counter counts submissions; it is not a claim that all three have been approved.
+Machine Learning remains 5/5 with its capstone accepted.
 
-| Assignment | Current evidence | What remains |
+| Assignment | Actual evidence | What remains |
 | --- | --- | --- |
-| FL-01: workflow audit and setup | Simple Week 1 workbook prepared separately | Student confirms real weekly tasks; tool setup and course-module evidence |
-| FL-06: personal agent design | Design file submitted to FlyRank; waiting for review | Student review and any reviewer changes |
-| FL-07: build the agent | Study-coach prototype, twelve passing tests, bounded tool loop, mock file-to-result run, build log | Live model run, human evaluation, raw demo |
-| Prompt Ladder | Six cumulative starter prompts and local-model runner prepared | Six real model outputs, student's comparison notes, final prompt |
-| Portfolio sitemap | Requirements inspected | Real project configuration, sketch, pressure test and user decisions |
-| What Are You Proving? | Requirements inspected | Student's own narrow claim, specific audience, action and why |
-| FL-05: concepts and MCP | Requirements inspected | Explainer tied to completed FL-04 workflow and three connector-call screenshots |
+| FL-01 | Week 1 workbook prepared separately | True task list, tool/project setup, course-module evidence |
+| FL-06 | Design submitted October 8 | Review outcome and any changes |
+| Identity kit | One-page SVG, free font, four colors, actual SVG favicon; rendered and checked; submitted October 12 | Reviewer response; repository-context substitution disclosed |
+| Content map | Claim, ten draft wording options, three-page map, two case outlines and honest gather-list; submitted October 12 | Reviewer response and student's review; proposed pages are not live |
+| FL-07 | Prototype, twelve passing tests, bounded loop, mock run, build log, live-evidence collector | Actual model run, human review, raw two-minute capture |
+| Prompt Ladder | Six cumulative prompts, local-model runner | Six real model outputs and student's comparison notes |
+| FL-04 | Current requirements inspected | No-code workflow, five real inputs, manual timing comparison, failure review |
+| FL-05 | Requirements inspected previously | Explainer and three real connector-call screenshots |
+| FL-09 | Setup README exists; current requirements inspected | Real evaluation evidence and three-to-five-minute narrated live demo |
+| Portfolio cases, sitemap and claim | Proposed content and existing workbook | Student decisions/interview, setup proof, sketch and live website where required |
+| AI Fluency capstone | Current brief inspected; inconsistent title/brief and historical Q&A noted | FlyRank clarification, required finished artifact and submission |
 
-## Understand the current build
+## Concrete blocker
+Ollama is not installed or listening in this workspace. No real local model ran.
+The new run_session.py helper's missing-model path was tested: it exited with failure and wrote a record clearly marked not completed.
+The helper is ready to collect a real agent run and six prompt outputs on a computer with an installed Ollama model.
+See FINISH_CHECKLIST.md. It does not record the student's voice or verify student hours.
 
-The first prototype followed a fixed read/search/model path. After reviewing
-the FL-05 distinction, a small model-directed loop was added. The model can
-choose a note search, see its result, and search again, answer, or ask a question.
-Only simulated model decisions have been tested. Real model behavior must
-still be checked before claiming FL-07 is complete.
+## Verification
+All twelve study-coach automated tests passed again on October 12.
+The model decisions and HTTP responses in those tests are simulated.
+Identity-kit SVG rendered correctly.
+Portal confirmation was observed for both new submissions.
 
-Anthropic reference: https://www.anthropic.com/engineering/building-effective-agents
+## UIW and FlyRank requests
+An email was sent to Arijana on October 12 asking for:
+- Current AI Fluency capstone requirements, because the Impact Project page currently shows a portfolio-maintenance reminder brief while its historical Q&A describes a broader project.
+- Continued work after the original September 30 end date and how to update the recorded dates.
+- The actual-hours verification process and who signs UIW's timesheet and supervisor evaluation.
+- Any existing hours FlyRank can support from its own records.
 
-## Run the Prompt Ladder
+No reply or verified hours total is claimed.
+The previously mentioned 71 hours was a portal estimate, not an actual timesheet.
+The standard UIW minimum is 140 clock hours for three credits; actual records and UIW acceptance remain unresolved.
+No time spent by the automated assistant is entered as the student's work.
 
-From `work/ai_fluency/study_coach`, with a local Ollama model already running:
-
-```sh
-python prompt_ladder.py --model MODEL_NAME --output ladder_run_01.json
-```
-
-Replace MODEL_NAME with the actual local model name. Each prompt adds one
-layer to the previous prompt. Each request starts a fresh conversation so an
-earlier answer does not leak into the next comparison. Output is saved after
-each successful call. A failed call is recorded and stops the run. This script
-has not been run against a real model in the assistant's environment.
-
-The assignment asks for a weak prompt from your own work. The baseline here is
-a proposed starter. Replace it with your actual weak prompt if different, and
-adjust the layers before running. Do not describe these as past prompts you
-used unless that is true.
-
-Read the outputs next to each other and replace NOT REVIEWED with your notes.
-Do not force every version to look better. If a layer did not help, say so and
-explain the actual output. The course asks for an honest unhelpful or worse
-result; that result cannot be made up before running the prompts.
-
-## What to record for UIW
-
-Use the actual time you spend studying, testing, editing, or developing, after
-your professor confirms the work counts. A portal estimate is only a guide.
-The previous 71-hour portal figure was an estimate, not a verified timesheet.
-We cannot calculate how far you are from 140 without your actual work record.
-The signed original application ended September 30; confirm any extension.
-
-## Repository checks
-
-Twelve local study-coach tests passed. The repository's smoke-test workflow
-also completed successfully for the initial prototype commit. This does not
-verify live AI behavior or student hours.
+## Build context
+ChatGPT/Codex was used instead of Claude. Portfolio context and style rules are saved in work/ai_fluency/portfolio.
+No configured Claude Project, student interview, out-loud review, live website, model result, or completed narrated demo is claimed.
