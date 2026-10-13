@@ -1,8 +1,8 @@
-# AI Fluency work status - October 12, 2026
+# AI Fluency work status - October 13, 2026
 
 All new code and documents are AI-assisted. No student time has been entered.
-The portal was checked after today's submissions: **AI Fluency 3/5 qualifying assignments; capstone not submitted.**
-This counter counts submissions; it is not a claim that all three have been approved.
+The portal was checked after the October 13 submissions: **AI Fluency 5/5 qualifying assignment submissions; capstone in review.**
+This counter counts submissions; it is not a claim that every assignment or the capstone has been approved.
 Machine Learning remains 5/5 with its capstone accepted.
 
 | Assignment | Actual evidence | What remains |
@@ -17,7 +17,9 @@ Machine Learning remains 5/5 with its capstone accepted.
 | FL-05 | Requirements inspected previously | Explainer and three real connector-call screenshots |
 | FL-09 | Setup README exists; current requirements inspected | Real evaluation evidence and three-to-five-minute narrated live demo |
 | Portfolio cases, sitemap and claim | Proposed content and existing workbook | Student decisions/interview, setup proof, sketch and live website where required |
-| AI Fluency capstone | Current brief inspected; inconsistent title/brief and historical Q&A noted | FlyRank clarification, required finished artifact and submission |
+| Maintenance plan | Exact next-case path, update steps, preserved repository context and real reminder; submitted October 13 | Reviewer response; Claude substitution disclosed |
+| Image curation | Actual code/test captures, kept initials SVG, actual rejected vector and reasons; submitted October 13 | Reviewer response; no portrait or live website claimed |
+| AI Fluency capstone | Maintenance/context/prototype package submitted October 13 against the displayed brief; portal confirms in review | Review outcome and any requested broader project evidence |
 
 ## Concrete blocker
 Ollama is not installed or listening in this workspace. No real local model ran.
@@ -38,7 +40,8 @@ An email was sent to Arijana on October 12 asking for:
 - The actual-hours verification process and who signs UIW's timesheet and supervisor evaluation.
 - Any existing hours FlyRank can support from its own records.
 
-No reply or verified hours total is claimed.
+Arijana replied October 13: continuing AI Fluency is allowed, no end-date update is needed on FlyRank's side, the requirement remains five assignments plus a capstone, and the task descriptions should be followed.
+The Documents hour log was inspected directly on October 13 after these submissions. It explicitly shows **82 estimated hours**: 50 from 15 completed assignment records and 32 from one accepted capstone. The AI Fluency capstone is submitted but not accepted and adds no hours yet. This is not a verified actual-work timesheet.
 The previously mentioned 71 hours was a portal estimate, not an actual timesheet.
 The standard UIW minimum is 140 clock hours for three credits; actual records and UIW acceptance remain unresolved.
 No time spent by the automated assistant is entered as the student's work.
@@ -46,3 +49,11 @@ No time spent by the automated assistant is entered as the student's work.
 ## Build context
 ChatGPT/Codex was used instead of Claude. Portfolio context and style rules are saved in work/ai_fluency/portfolio.
 No configured Claude Project, student interview, out-loud review, live website, model result, or completed narrated demo is claimed.
+
+## Reminder and overlapping briefs
+A one-time reminder to update the live study-coach case was successfully created for October 14 around 7 PM America/Chicago.
+The maintenance plan and current Impact Project capstone show the same brief. The shared artifact and overlap were disclosed in both submissions. These are not claimed as two independent work sessions.
+The capstone package explicitly says the live model, website, student review and narrated demo are missing. Its submission is a request for review, not a claim that the broader historical capstone requirements are finished.
+
+## Route toward the portal estimate goal
+See HOURS_PLAN.md. More meaningful work is needed beyond the minimum five assignment submissions. Do not mark courses, resources, recordings, or personal exercises complete on the student's behalf when the student has not done them.
