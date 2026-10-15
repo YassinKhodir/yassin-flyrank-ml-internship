@@ -11,7 +11,7 @@ Machine Learning remains 5/5 with its capstone accepted.
 | FL-06 | Design submitted October 8 | Review outcome and any changes |
 | Identity kit | One-page SVG, free font, four colors, actual SVG favicon; rendered and checked; submitted October 12 | Reviewer response; repository-context substitution disclosed |
 | Content map | Claim, ten draft wording options, three-page map, two case outlines and honest gather-list; submitted October 12 | Reviewer response and student's review; proposed pages are not live |
-| FL-07 | Prototype, twelve passing tests, bounded loop, mock run, build log, live-evidence collector | Actual model run, human review, raw two-minute capture |
+| FL-07 | Working local model run and saved trace inspected; 2:02 raw capture reviewed; build log updated; Windows 11 passed, 1 skipped | Portal upload failed twice October 15; submission not confirmed; reviewer decision still needed |
 | Prompt Ladder | Six cumulative prompts, local-model runner | Six real model outputs and student's comparison notes |
 | FL-04 | Current requirements inspected | No-code workflow, five real inputs, manual timing comparison, failure review |
 | FL-05 | Requirements inspected previously | Explainer and three real connector-call screenshots |
@@ -65,3 +65,19 @@ The handoff describes flyrank.mp4 as 54 seconds with silent audio; video/audio w
 A case note was added at portfolio/cases/study-coach-live.md with those evidence limits. The broad claim that no student live run exists is no longer appropriate.
 Still needed: save/inspect the actual live-run evidence, an approximately two-minute raw FL-07 capture, a three-to-five-minute narrated FL-09 demo, student review and any remaining evaluation evidence. The short narration script previously suggested does not itself satisfy the video-duration requirement.
 Portal approval and hour totals were not rechecked in this update. No hours were added or guessed.
+
+## October 15 inspected evidence and submission attempt
+The saved live_answer_01.json was read directly: Ollama gemma4:e2b searched
+data-leakage notes, found one match, then answered with a source heading.
+The Windows test record shows 11 passed and 1 skipped, rather than 12 passed.
+The new raw recording, flyrank(2).mp4, is 122.27 seconds. It shows a fresh
+command, a real answer, and the practice notes comparison. Its definition
+and example match the notes. This supersedes the handoff-only evidence
+status above. It is suitable raw FL-07 evidence; FL-09 narration remains missing.
+The build log and public case were updated with the observed facts and limits.
+
+Two FL-07 submission attempts with the original raw video, immutable source
+links and notes failed. The portal displayed: "The submission could not be
+sent. Check your connection, refresh this page, and try again." One refresh
+and retry did not resolve it. No successful submission or approval is claimed.
+No hour totals were rechecked or changed. No student work time was inferred.
