@@ -1,4 +1,4 @@
-# AI Fluency work status - October 13, 2026
+# AI Fluency work status - updated October 15, 2026
 
 All new code and documents are AI-assisted. No student time has been entered.
 The portal was checked after the October 13 submissions: **AI Fluency 5/5 qualifying assignment submissions; capstone in review.**
@@ -21,8 +21,8 @@ Machine Learning remains 5/5 with its capstone accepted.
 | Image curation | Actual code/test captures, kept initials SVG, actual rejected vector and reasons; submitted October 13 | Reviewer response; no portrait or live website claimed |
 | AI Fluency capstone | Maintenance/context/prototype package submitted October 13 against the displayed brief; portal confirms in review | Review outcome and any requested broader project evidence |
 
-## Concrete blocker
-Ollama is not installed or listening in this workspace. No real local model ran.
+## Environment distinction
+As of the assistant's October 13 workspace check, Ollama was not installed or listening there. The student has since supplied a handoff describing a live Gemma/Ollama run on their own computer (see the October 15 update below).
 The new run_session.py helper's missing-model path was tested: it exited with failure and wrote a record clearly marked not completed.
 The helper is ready to collect a real agent run and six prompt outputs on a computer with an installed Ollama model.
 See FINISH_CHECKLIST.md. It does not record the student's voice or verify student hours.
@@ -48,7 +48,7 @@ No time spent by the automated assistant is entered as the student's work.
 
 ## Build context
 ChatGPT/Codex was used instead of Claude. Portfolio context and style rules are saved in work/ai_fluency/portfolio.
-No configured Claude Project, student interview, out-loud review, live website, model result, or completed narrated demo is claimed.
+No configured Claude Project, student interview, out-loud review, live website, or completed narrated demo is claimed. The live-result report received October 15 is distinguished from directly inspected evidence below.
 
 ## Reminder and overlapping briefs
 A one-time reminder to update the live study-coach case was successfully created for October 14 around 7 PM America/Chicago.
@@ -57,3 +57,11 @@ The capstone package explicitly says the live model, website, student review and
 
 ## Route toward the portal estimate goal
 See HOURS_PLAN.md. More meaningful work is needed beyond the minimum five assignment submissions. Do not mark courses, resources, recordings, or personal exercises complete on the student's behalf when the student has not done them.
+
+
+## October 15 student handoff
+The student supplied a conversation handoff describing a Gemma/Ollama PowerShell run explaining data leakage and checking the answer against the practice notes. The definition/example and source heading are reported to match.
+The handoff describes flyrank.mp4 as 54 seconds with silent audio; video/audio were not independently inspected in this update.
+A case note was added at portfolio/cases/study-coach-live.md with those evidence limits. The broad claim that no student live run exists is no longer appropriate.
+Still needed: save/inspect the actual live-run evidence, an approximately two-minute raw FL-07 capture, a three-to-five-minute narrated FL-09 demo, student review and any remaining evaluation evidence. The short narration script previously suggested does not itself satisfy the video-duration requirement.
+Portal approval and hour totals were not rechecked in this update. No hours were added or guessed.
