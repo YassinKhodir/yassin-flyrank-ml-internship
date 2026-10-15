@@ -42,3 +42,34 @@ AI-assisted work. Entries describe observed work, not student attendance or hour
 
 Real model outputs, the student's five-case review, and a raw screen recording.
 FL-07 is not ready to mark complete. No student hours are claimed.
+
+## October 15, 2026 — live run and raw capture
+
+This section updates the earlier missing-evidence status. AI assistance was used
+for code, troubleshooting, documentation, and submission preparation.
+
+- The earlier Windows recording showed real failed attempts: an unavailable
+  model, an unsupported tool action, an answer before a search, and invalid JSON.
+  The committed Ollama request now includes `"format": "json"`.
+- Read the saved `live_answer_01.json`: Ollama with `gemma4:e2b` chose
+  `search_notes` for data leakage, found one match, then chose `answer`.
+  It cited the Data leakage heading in the local artificial practice notes.
+- Read `test_results_windows.txt`: 12 tests ran; 11 passed and one symlink
+  test was skipped because Windows permissions were unavailable.
+- Reviewed the new raw recording, `flyrank(2).mp4` (122.27 seconds).
+  It shows a clean prompt, the typed question and command, a real answer,
+  and opening the notes to compare the definition and example. No mid-run
+  hand-editing of the answer appears. The raw file is for the private portal
+  upload, not the public repository.
+- The answer explains data leakage and gives the future-clicks example. It
+  matches the notes. This one capture does not prove every answer is correct.
+  It does not include a practice question. Citation checks only match headings.
+  Earlier testing also showed conflicting dates without a direct clarification
+  question. These remain limits, rather than claims of perfect behavior.
+- Platform change: the custom local Python/Ollama agent replaces a hosted
+  assistant so it can use local files without a paid API. Scope stays narrow:
+  search practice notes and explain a supported topic.
+
+FL-07 now has a working local run, build log, and raw capture ready to submit.
+Reviewer approval is still separate. This is not the narrated FL-09 demo.
+No student work time is inferred from video length, tests, or portal estimates.
