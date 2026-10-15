@@ -53,7 +53,12 @@ class CoachTests(unittest.TestCase):
             notes.mkdir()
             outside = root / "private.txt"
             outside.write_text("private")
-            (notes / "link.txt").symlink_to(outside)
+            try:
+                (notes / "link.txt").symlink_to(outside)
+            except OSError as exc:
+                if getattr(exc, "winerror", None) == 1314:
+                    self.skipTest("Windows permission required to create symbolic links")
+                raise
             with self.assertRaises(ValueError):
                 coach.read_notes(notes)
 

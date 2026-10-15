@@ -77,7 +77,7 @@ def ollama(messages, model):
     """Fixed loopback address: never send notes to a remote endpoint."""
     request = Request("http://127.0.0.1:11434/api/chat",
                       data=json.dumps({"model": model, "messages": messages,
-                                       "stream": False}).encode(),
+                                       "stream": False, "format": "json"}).encode(),
                       headers={"Content-Type": "application/json"}, method="POST")
     try:
         with urlopen(request, timeout=90) as response:

@@ -1,0 +1,31 @@
+{
+  "backend": "ollama",
+  "model": "gemma4:e2b",
+  "question": "Explain CTR for 10 clicks and 100 impressions",
+  "answer": "CTR means click-through rate [CTR].\n\n**How to calculate CTR:**\n1. Divide clicks by impressions.\n2. Multiply by 100 to get a percentage [CTR].\n\n**Example:**\nWith 10 clicks and 100 impressions, the CTR is 10% [CTR].\n\n**Practice Question:**\nIf a website gets 50 clicks and 500 impressions, what is the CTR?",
+  "sources": [
+    {
+      "source": "sample.md",
+      "heading": "CTR",
+      "text": "CTR means click-through rate. Divide clicks by impressions, then multiply by 100 for a percentage. With 10 clicks and 100 impressions, CTR is 10%.",
+      "blocked": false
+    },
+    {
+      "source": "sample.md",
+      "heading": "Data leakage",
+      "text": "Data leakage means the model sees information that would not be available when making a real prediction. Example: using next week's clicks to predict this week's result. Separate past training data from future test data.",
+      "blocked": false
+    }
+  ],
+  "steps": [
+    {
+      "action": "search_notes",
+      "query": "CTR impressions clicks",
+      "matches": 2
+    },
+    {
+      "action": "answer"
+    }
+  ],
+  "blocked_passages": 1
+}
