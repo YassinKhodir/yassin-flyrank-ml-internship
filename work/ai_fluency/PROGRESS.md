@@ -11,7 +11,7 @@ Machine Learning remains 5/5 with its capstone accepted.
 | FL-06 | Design submitted October 8 | Review outcome and any changes |
 | Identity kit | One-page SVG, free font, four colors, actual SVG favicon; rendered and checked; submitted October 12 | Reviewer response; repository-context substitution disclosed |
 | Content map | Claim, ten draft wording options, three-page map, two case outlines and honest gather-list; submitted October 12 | Reviewer response and student's review; proposed pages are not live |
-| FL-07 | Working local model run and saved trace inspected; 2:02 raw capture reviewed; build log updated; Windows 11 passed, 1 skipped | Portal upload failed twice October 15; submission not confirmed; reviewer decision still needed |
+| FL-07 | Working local model run and saved trace inspected; 2:02 raw capture reviewed; build log updated; Windows 11 passed, 1 skipped | Submitted October 15 with the full-length smaller video copy; waiting for review |
 | Prompt Ladder | Six cumulative prompts, local-model runner | Six real model outputs and student's comparison notes |
 | FL-04 | Current requirements inspected | No-code workflow, five real inputs, manual timing comparison, failure review |
 | FL-05 | Requirements inspected previously | Explainer and three real connector-call screenshots |
@@ -81,3 +81,17 @@ links and notes failed. The portal displayed: "The submission could not be
 sent. Check your connection, refresh this page, and try again." One refresh
 and retry did not resolve it. No successful submission or approval is claimed.
 No hour totals were rechecked or changed. No student work time was inferred.
+
+## October 15 upload resolved
+The browser console identified HTTP 413: the original video upload was too
+large. Renaming the original did not resolve it. A lower-bitrate copy was made
+without cuts, rearrangement, or changes to the answer. The full duration stays
+122.27 seconds; the file is 1,255,869 bytes. A frame check confirmed readable
+terminal text. The original recording is preserved privately.
+
+FL-07 was successfully saved with `flyrank-fl07-full-run-small.mp4`, source
+links and build log at commit `349a1d8`. After a reload the portal displayed
+"Assignment submitted", "Your work is waiting for review", and the saved video
+preview. Re-encoding was disclosed in the notes. This supersedes the failed
+upload status above. No approval or actual-hour verification is claimed.
+FL-09 still needs its separate narrated demo. No hour totals were rechecked.
