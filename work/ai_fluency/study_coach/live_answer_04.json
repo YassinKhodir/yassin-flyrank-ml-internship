@@ -1,0 +1,31 @@
+{
+  "backend": "ollama",
+  "model": "gemma4:e2b",
+  "question": "What is the assignment due date?",
+  "answer": "There are two different due dates mentioned in the notes. You need to decide which one is current.\n\n*   Assignment date version A says the due date is October 12 (Assignment date version A).\n*   Assignment date version B says the due date is October 15 (Assignment date version B).\n\nTo find the correct date, you must ask which version is current.\n\n**Example:** If you choose October 12, that is the date. If you choose October 15, that is the date.\n\n**Practice Question:** If you see both October 12 and October 15, what is the next step according to the notes?",
+  "sources": [
+    {
+      "source": "sample.md",
+      "heading": "Assignment date version A",
+      "text": "The sample assignment due date is October 12. This is an artificial test date.",
+      "blocked": false
+    },
+    {
+      "source": "sample.md",
+      "heading": "Assignment date version B",
+      "text": "The sample assignment due date is October 15. This conflicts with version A. Ask which version is current. This is an artificial test date.",
+      "blocked": false
+    }
+  ],
+  "steps": [
+    {
+      "action": "search_notes",
+      "query": "due date assignment",
+      "matches": 2
+    },
+    {
+      "action": "answer"
+    }
+  ],
+  "blocked_passages": 1
+}

@@ -1,0 +1,15 @@
+{
+  "backend": "mock",
+  "model": null,
+  "question": "Explain data leakage",
+  "blocked_passages": 1,
+  "sources": [
+    {
+      "source": "sample.md",
+      "heading": "Data leakage",
+      "text": "Data leakage means the model sees information that would not be available when making a real prediction. Example: using next week's clicks to predict this week's result. Separate past training data from future test data.",
+      "blocked": false
+    }
+  ],
+  "answer": "MOCK MODE: excerpts only; no AI model ran.\n\n[sample.md / Data leakage]\nData leakage means the model sees information that would not be available when making a real prediction. Example: using next week's clicks to predict this week's result. Separate past training data from future test data."
+}
