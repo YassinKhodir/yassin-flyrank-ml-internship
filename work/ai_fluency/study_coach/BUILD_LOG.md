@@ -73,3 +73,24 @@ for code, troubleshooting, documentation, and submission preparation.
 FL-07 now has a working local run, build log, and raw capture ready to submit.
 Reviewer approval is still separate. This is not the narrated FL-09 demo.
 No student work time is inferred from video length, tests, or portal estimates.
+
+## October 20 - due-date clarification fix
+The first saved live date answer listed both dates but told the reader to
+choose rather than directly asking which was current. Added a small local
+guardrail after the model searches notes. For due/deadline questions, it looks
+for different written month dates in relevant deadline passages, cites the
+sources, and asks "Which version is current?" It does not pick a date.
+The trace labels this step local_guardrail; it is not a model-made decision.
+It also checks the question's initial retrieval, so the model's narrower search
+cannot hide a conflicting date from that retrieved set.
+
+All 15 study-coach tests passed in the assistant workspace. Three new tests
+check conflict clarification, a normal single deadline, and unrelated or blocked
+passages. Model calls in tests are simulated. A new real Windows/Gemma test
+is pending. Historical live outputs have not been overwritten.
+
+Limits: this small rule detects full English month-name dates in due/deadline
+passages. It does not understand all date formats, resolve real deadlines, or
+search beyond retrieved passages. Different deadlines may refer to different
+tasks; clarification is conservative, not proof that the notes are wrong.
+No student time or additional assignment completion is claimed.
