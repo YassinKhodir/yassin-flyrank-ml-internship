@@ -95,3 +95,27 @@ links and build log at commit `349a1d8`. After a reload the portal displayed
 preview. Re-encoding was disclosed in the notes. This supersedes the failed
 upload status above. No approval or actual-hour verification is claimed.
 FL-09 still needs its separate narrated demo. No hour totals were rechecked.
+
+## October 20: work toward the 140-hour goal
+Fresh portal check: ML has 10 qualifying assignments and its certificate is
+issued. AI Fluency has 6 qualifying assignments, capstone accepted October 18,
+and its certificate is qualified but still available to generate. The hour
+log shows 104 estimated hours: 60 assignment estimates and 44 accepted-capstone
+estimates. Prior review-pending status above is historical.
+
+Work completed in the repository:
+- EVALUATION.md reviews all five saved local results against artificial notes.
+- README.md now has setup, architecture, current evidence and remaining limits.
+- guided_ladder.py collects six fresh local-model answers and the user's four
+  comparison notes after each answer; the user chooses one next layer.
+- Three simulated tests passed: overwrite protection, preservation on failure,
+  and six cumulative prompts with saved review. These are not model runs.
+- PROMPT_LADDER_REVIEW.md has the exact run command and private-output guidance.
+
+Ollama is not installed in the assistant workspace. A real ladder session needs
+the student's local model. No six-run experiment is claimed yet. FL-09 still
+needs a genuine second evaluation and its 3–5 minute narrated demo with an
+unlisted video link. The claim and stack briefs explicitly require the student's
+own thinking and words; none is represented as completed from an AI draft alone.
+No new portal submission or added hours is claimed for these preparations.
+No automated processing time has been entered as student work time.
