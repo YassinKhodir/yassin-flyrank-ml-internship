@@ -142,3 +142,24 @@ The silent FL-07 capture is separate evidence. Upload the FL-09 video as an
 unlisted YouTube link, as the current assignment requests. Do not publish
 private notes or account information. Submit the README and video link only
 after the remaining evaluation and demo evidence exist.
+
+## Due-date clarification update
+For due/deadline questions, a local code check now asks which version is current
+when relevant retrieved passages contain different written month-name dates.
+The saved trace marks the step `origin: local_guardrail`; the question is from
+code, not an extra model answer. It shows the dates and source headings.
+It does not choose a deadline or claim the notes must describe the same task.
+Numeric dates, abbreviated month names, and passages outside the retrieved set
+are not covered. Check the official assignment source for the real deadline.
+
+The study-coach suite now has 15 tests; all passed in the assistant workspace.
+The earlier saved live results remain unchanged. A live check of this update
+is still needed. From this folder, after pulling the branch:
+
+```sh
+python coach.py --notes notes --question "What is the assignment due date?" --backend ollama --model gemma4:e2b --output sessions/date-check-v2.json
+```
+
+Use a new filename if it already exists. The sessions folder exists after the
+Prompt Ladder run. Expect both artificial dates, a direct clarification question,
+and a trace that identifies the local guardrail.
