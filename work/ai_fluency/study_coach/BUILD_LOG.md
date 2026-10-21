@@ -94,3 +94,16 @@ passages. It does not understand all date formats, resolve real deadlines, or
 search beyond retrieved passages. Different deadlines may refer to different
 tasks; clarification is conservative, not proof that the notes are wrong.
 No student time or additional assignment completion is claimed.
+
+### Follow-up: premature model answer during the Windows check
+The student's live command failed with "The model tried to answer before
+reading the notes." No successful v2 model result is claimed from that attempt.
+Moved the written due-date conflict check before model inference, so known
+conflicts ask for clarification without relying on model search behavior.
+The output is explicitly labelled backend local_guardrail, model_called false,
+model null, with requested_model retained separately. A post-search check stays
+as a fallback for additional evidence found by the agent.
+All 15 tests passed, and the real CLI guardrail ran successfully in the assistant
+workspace without Ollama. That CLI result is a local code check, not AI inference.
+Earlier descriptions of the date guardrail occurring only after search are now
+superseded. Normal supported-topic answers still use the model-directed loop.
