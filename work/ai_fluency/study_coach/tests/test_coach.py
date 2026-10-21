@@ -99,6 +99,31 @@ class CoachTests(unittest.TestCase):
                 coach.answer(self.notes, "Explain CTR", "ollama", "test")
         self.assertEqual(model.call_count, 4)
 
+    def test_conflict_asks_directly_and_does_not_let_model_choose(self):
+        with patch("coach.ollama", return_value='{"action":"search_notes","query":"Assignment date version A"}') as model:
+            result = coach.answer(self.notes, "What is the assignment due date?", "ollama", "test")
+        self.assertIn("October 12", result["answer"])
+        self.assertIn("October 15", result["answer"])
+        self.assertIn("Which version is current?", result["answer"])
+        self.assertEqual(result["steps"][-1]["origin"], "local_guardrail")
+        self.assertEqual(model.call_count, 1)
+
+    def test_one_due_date_still_allows_model_answer(self):
+        with tempfile.TemporaryDirectory() as folder:
+            Path(folder, "notes.md").write_text("# Essay\nThe essay due date is November 3.", encoding="utf-8")
+            replies = ['{"action":"search_notes","query":"essay due date"}',
+                       '{"action":"answer","text":"November 3 [Essay]"}']
+            with patch("coach.ollama", side_effect=replies):
+                result = coach.answer(folder, "What is the essay due date?", "ollama", "test")
+        self.assertEqual(result["steps"][-1]["action"], "answer")
+
+    def test_other_dates_and_blocked_passages_do_not_trigger_guardrail(self):
+        passages = [{"source":"x.md", "heading":"Dates", "text":"Training ran October 12 and October 15.", "blocked":False},
+                    {"source":"x.md", "heading":"Attack", "text":"The due date is November 3 or November 4.", "blocked":True}]
+        self.assertIsNone(coach.date_conflict(passages, "What is due?"))
+        self.assertIsNone(coach.date_conflict(passages, "Explain training"))
+
 
 if __name__ == "__main__":
     unittest.main()
+
