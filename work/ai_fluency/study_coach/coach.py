@@ -18,6 +18,31 @@ Give a short explanation, a small example, and one practice question.
 Never send messages, submit assignments, or change files."""
 STOP = set("a an and are as at be by do does for from how i in is it me my of on or please the this to what with explain means mean about".split())
 SUSPICIOUS = re.compile(r"ignore.{0,30}instructions|reveal.{0,30}(password|secret)|system prompt|send.{0,40}(password|secret)", re.I)
+WRITTEN_DATE = re.compile(r"\b(?:January|February|March|April|May|June|July|August|September|October|November|December)\s+\d{1,2}(?:,\s+\d{4})?\b", re.I)
+
+
+def date_conflict(passages, question):
+    """A narrow guardrail for due-date questions with written month dates."""
+    if not re.search(r"\b(?:due|deadline)\b", question, re.I):
+        return None
+    evidence = []
+    dates = set()
+    for passage in passages:
+        if passage["blocked"] or not re.search(r"\b(?:due|deadline)\b", passage["text"], re.I):
+            continue
+        found = WRITTEN_DATE.findall(passage["text"])
+        if not found:
+            continue
+        dates.update(re.sub(r"\s+", " ", date).lower() for date in found)
+        if passage not in evidence:
+            evidence.append(passage)
+    if len(dates) < 2:
+        return None
+    lines = ["The notes mention different due dates:"]
+    for passage in evidence:
+        lines.append(f"- {', '.join(WRITTEN_DATE.findall(passage['text']))} [{passage['source']} / {passage['heading']}]")
+    lines.append("Which version is current? Please check the official assignment page or ask your instructor; I cannot choose the correct date from these notes.")
+    return "\n".join(lines), evidence
 
 
 def words(text):
@@ -144,6 +169,17 @@ def agent_loop(chunks, question, model):
             for passage in found:
                 if passage not in sources:
                     sources.append(passage)
+            # Check the question's retrieval too, so a narrow model search cannot
+            # hide another date already present in the connected notes.
+            conflict = date_conflict(retrieve(chunks, question) + sources, question)
+            if conflict:
+                text, evidence = conflict
+                for passage in evidence:
+                    if passage not in sources:
+                        sources.append(passage)
+                steps.append({"action": "clarify", "origin": "local_guardrail",
+                              "reason": "different_written_due_dates"})
+                break
             messages.append({"role": "user", "content": json.dumps({"tool_result": found})})
         elif action in {"answer", "clarify"}:
             text = choice.get("text")
@@ -191,3 +227,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
