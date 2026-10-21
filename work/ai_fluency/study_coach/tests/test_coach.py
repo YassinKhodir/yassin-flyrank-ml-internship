@@ -106,7 +106,11 @@ class CoachTests(unittest.TestCase):
         self.assertIn("October 15", result["answer"])
         self.assertIn("Which version is current?", result["answer"])
         self.assertEqual(result["steps"][-1]["origin"], "local_guardrail")
-        self.assertEqual(model.call_count, 1)
+        model.assert_not_called()
+        self.assertEqual(result["backend"], "local_guardrail")
+        self.assertFalse(result["model_called"])
+        self.assertIsNone(result["model"])
+        self.assertEqual(result["requested_model"], "test")
 
     def test_one_due_date_still_allows_model_answer(self):
         with tempfile.TemporaryDirectory() as folder:
