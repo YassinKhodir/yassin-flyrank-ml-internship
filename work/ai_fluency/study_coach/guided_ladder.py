@@ -22,10 +22,10 @@ def model_answer(prompt, model):
                          "messages": [{"role": "user", "content": prompt}]}).encode(),
         headers={"Content-Type": "application/json"}, method="POST")
     try:
-        with urlopen(request, timeout=180) as response:
+        with urlopen(request, timeout=600) as response:
             result = json.load(response)
     except (URLError, TimeoutError, json.JSONDecodeError) as exc:
-        raise RuntimeError("Local model request failed. Check Ollama and the model name.") from exc
+        raise RuntimeError(f"Local model request failed ({type(exc).__name__}: {exc}). Check Ollama and the model name.") from exc
     if not isinstance(result, dict):
         raise RuntimeError("The model response was not an object.")
     message = result.get("message")
