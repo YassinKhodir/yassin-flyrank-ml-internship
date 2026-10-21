@@ -15,7 +15,7 @@ The coach is a study aid. It does not decide which school deadline is correct.
 - Windows test record: 11 passed, one symlink test skipped for permissions.
   Earlier cloud tests passed all twelve. These tests simulate model decisions.
 - FL-07 was submitted October 15 with code, build log and the full 2:02 capture.
-- FL-09 still needs a genuine v2 evaluation and a 3–5 minute narrated live demo.
+- The second evaluation is documented in EVALUATION.md. FL-09 still needs a 3–5 minute narrated live demo.
   No hours are verified by this README.
 
 ## Get the code
@@ -163,3 +163,16 @@ python coach.py --notes notes --question "What is the assignment due date?" --ba
 Use a new filename if it already exists. The sessions folder exists after the
 Prompt Ladder run. Expect both artificial dates, a direct clarification question,
 and a trace that identifies the local guardrail.
+
+## Second Windows evaluation received
+All five updated saved results were inspected. See the second-evaluation table
+in EVALUATION.md for results, comparisons and remaining failures. There are
+three genuine Gemma search/answer runs, a local missing-topic refusal, and a
+local date-conflict check. Do not describe these as five model calls.
+
+The date guardrail now checks BEFORE model inference as well as after a search.
+It labels a preflight result backend local_guardrail, model_called false,
+model null, and keeps the requested model separately. This supersedes the
+older after-search-only description above. The student confirmed the direct
+clarification on Windows. The raw v2 results stay private.
+The narrated 3–5 minute FL-09 demo and unlisted video link remain outstanding.
