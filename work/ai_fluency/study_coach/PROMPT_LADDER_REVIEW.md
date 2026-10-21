@@ -54,3 +54,23 @@ runs: they answer different questions, so they are not this experiment.
 ## Work time
 Write down your actual start, stop and break times in your private timesheet.
 Runtime timestamps and assignment estimates do not measure your work time.
+
+## Guided runner (new)
+From this study_coach folder, run:
+
+```sh
+python guided_ladder.py --model gemma4:e2b --output sessions/ladder-01
+```
+
+Start Ollama first. Keep the same model for all six versions. Answer each
+question in your own words. The runner pauses after each answer so you can
+choose the next single layer. It saves each model output before asking for
+review notes. The next prompt includes earlier instructions plus your one
+addition. Only you can check whether that addition really is one layer.
+Each model call uses a fresh conversation, with no forced JSON answer format.
+
+If it stops, partial evidence stays in sessions/ladder-01/results.json. Use a
+new folder for a fresh experiment; the program refuses to overwrite it.
+Keep that folder private until its content has been checked. Do not submit
+incomplete results as six completed runs. Three simulated tests passed; the
+runner has not been tested with a live Ollama model in this workspace.
