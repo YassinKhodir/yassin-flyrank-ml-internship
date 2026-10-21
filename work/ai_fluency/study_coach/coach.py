@@ -130,6 +130,17 @@ def answer(folder, question, backend="mock", model=None):
     elif backend == "ollama":
         if not model:
             raise ValueError("Choose a local model with --model.")
+        # Known conflicting dates do not need a model decision. Check before
+        # inference, since a small model may try to answer without searching.
+        conflict = date_conflict(passages, question)
+        if conflict:
+            text, evidence = conflict
+            result.update(backend="local_guardrail", requested_backend=backend,
+                          requested_model=model, model=None, model_called=False,
+                          answer=text, sources=evidence,
+                          steps=[{"action": "clarify", "origin": "local_guardrail",
+                                  "reason": "different_written_due_dates"}])
+            return result
         return agent_loop(chunks, question, model)
     else:
         raise ValueError("Unknown backend.")
