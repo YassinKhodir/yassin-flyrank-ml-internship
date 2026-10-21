@@ -137,3 +137,14 @@ The hour log then showed 106 estimated hours: 62 assignment estimates and 44
 accepted-capstone estimates. The remaining portal-estimate gap to 140 is 34.
 This supersedes earlier statements that the six ladder runs were missing.
 No actual hours, new approval, or finished FL-09 demo are claimed.
+
+## Second study-coach evaluation received
+The student ran five updated questions on Windows after commit 9505a2b and
+uploaded evaluation-v2.json. It was inspected directly: three real Gemma
+search/answer traces, one pre-model missing-topic refusal, and one local
+written-date conflict guardrail. The date check now asks directly which version
+is current. EVALUATION.md and README.md document observations and remaining
+limits. The unsafe passage is excluded but that answer omits an explicit
+missing-support response for part of the question. Raw evaluation stays private.
+FL-09 still needs its 3–5 minute narrated demo and unlisted video link. No new
+portal submission or estimated-hour increase is claimed. Last checked: 106.
