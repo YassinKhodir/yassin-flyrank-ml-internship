@@ -119,3 +119,21 @@ unlisted video link. The claim and stack briefs explicitly require the student's
 own thinking and words; none is represented as completed from an AI draft alone.
 No new portal submission or added hours is claimed for these preparations.
 No automated processing time has been entered as student work time.
+
+## Prompt Ladder submitted - October 20, 2026 (America/Chicago)
+The student uploaded recovered results.json containing all six real Gemma
+outputs, cumulative prompts, named layers, reasons and four review notes per
+version. The user performed the local runs with step-by-step AI guidance;
+AI-drafted prompt and review wording is disclosed, not described as unaided.
+Version 2 failed to fix unsupported claims; version 5 removed useful details.
+Version 4 was selected as best tested. The cleaned reusable prompt has not had
+a separate seventh test. The recovery preserved versions 0-4 and reran only 5.
+
+A PDF containing full prompts, outputs, notes and the reusable prompt plus the
+original JSON were uploaded privately to the Prompt Ladder assignment. After
+reload, FlyRank showed "Assignment submitted" and both attachments; waiting
+for review. No private result file was committed to this public repository.
+The hour log then showed 106 estimated hours: 62 assignment estimates and 44
+accepted-capstone estimates. The remaining portal-estimate gap to 140 is 34.
+This supersedes earlier statements that the six ladder runs were missing.
+No actual hours, new approval, or finished FL-09 demo are claimed.
