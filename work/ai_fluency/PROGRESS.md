@@ -1,4 +1,4 @@
-# AI Fluency work status - updated October 15, 2026
+# AI Fluency work status - latest update November 10, 2026
 
 All new code and documents are AI-assisted. No student time has been entered.
 The portal was checked after the October 13 submissions: **AI Fluency 5/5 qualifying assignment submissions; capstone in review.**
@@ -148,3 +148,20 @@ limits. The unsafe passage is excluded but that answer omits an explicit
 missing-support response for part of the question. Raw evaluation stays private.
 FL-09 still needs its 3–5 minute narrated demo and unlisted video link. No new
 portal submission or estimated-hour increase is claimed. Last checked: 106.
+
+
+## November 10: FL-09 submitted
+The student's narrated demo is published as an unlisted video:
+https://www.youtube.com/watch?v=7VjbMP6wQds
+It lasts 3 minutes 54.5 seconds (the player rounds to 3:55). Sampled frames
+show a live data-leakage answer, practice-note checking, the local date-conflict
+guardrail and a CTR calculation. The video description discloses AI assistance.
+
+FL-09 was submitted with the video and immutable README/EVALUATION links at
+commit 151a8c48a36cbccde926b6c2079c03661fce5807. The portal confirmed
+"Assignment submitted" and "Your work is waiting for review." This replaces
+the earlier missing-demo status. Submission does not mean reviewer approval.
+
+The Documents hour log now shows 111 estimated hours: 18 completed assignments
+worth 67 estimated hours and two accepted capstones worth 44. The remaining
+portal-estimate gap to 140 is 29. No actual student work time was entered.
