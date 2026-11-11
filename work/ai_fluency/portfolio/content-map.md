@@ -1,5 +1,5 @@
 # The Through-Line: content and action map
-AI-assisted assignment deliverable, October 12, 2026. No student hours claimed.
+AI-assisted assignment deliverable, updated November 10, 2026. No student hours claimed.
 
 ## One audience and one action
 Audience: a FlyRank internship reviewer.
@@ -51,16 +51,21 @@ Do not add metric values until they are checked in the underlying report.
 
 ### Source-grounded study coach
 Problem: technical notes and code need explanations in simple English.
-Work: a Python program reads small local text notes, retrieves passages, and can ask an Ollama model to search, answer, or clarify. There is a four-turn limit. A six-prompt comparison runner is also prepared.
-Observed result: twelve local automated tests passed. The mock file-to-result workflow ran. The model decisions used in the tests were simulated.
-Limit: a real local-model run, student review, and the narrated demo are still pending.
+Work: a Python program reads small local text notes, retrieves passages, and can ask an Ollama model to search, answer, or clarify. There is a four-turn limit. The six-prompt comparison was run locally and submitted October 20.
+Observed result: the updated evaluation contains three real Gemma answers and two local checks. Fifteen automated coach tests passed separately, with simulated model decisions.
+Limit: answers still need checking. FL-09's narrated demo is submitted and waiting for review; full student wording review remains incomplete.
 Evidence: https://github.com/YassinKhodir/yassin-flyrank-ml-internship/tree/ai-fluency-study-coach/work/ai_fluency/study_coach
+
+## Current case document
+[Read both framed cases](framed-cases.md). It includes the voice card, bio,
+review action, and before/after wording. It identifies remaining personal-review
+requirements explicitly. It is not a claim of a live website or a completed interview.
 
 ## Still need to gather
 - The actual completion certificate PDF; approval is already confirmed.
-- Checked metric values from the ML report before making performance claims.
-- Real study-coach model output and note-source checks.
-- Raw FL-07 capture, and narrated FL-09 demo.
+- ML values were checked against the saved capstone for framed-cases.md.
+- Real study-coach outputs and both evaluation rounds are documented.
+- FL-07 raw capture and FL-09 narrated demo have been submitted.
 - Student's own decisions and reflection for the case-writing interview.
 - A live website, working page links, and phone-size screenshots.
 - Feedback from another reader; no testimonial is claimed.
