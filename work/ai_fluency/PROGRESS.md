@@ -165,3 +165,21 @@ the earlier missing-demo status. Submission does not mean reviewer approval.
 The Documents hour log now shows 111 estimated hours: 18 completed assignments
 worth 67 estimated hours and two accepted capstones worth 44. The remaining
 portal-estimate gap to 140 is 29. No actual student work time was entered.
+
+
+## November 10: framed portfolio cases drafted
+The current case-writing brief was checked in the portal. A single draft,
+[portfolio/framed-cases.md](portfolio/framed-cases.md), now covers both projects
+called for by the content map. It includes a six-word voice card, the problem /
+work / result for each project, limits, evidence links, a short bio, one review
+action, and a generic/plain wording comparison. ML numbers were checked against
+the saved capstone notebook; starter example numbers were not reused.
+
+The live study-coach case and project context now reflect the second evaluation,
+Prompt Ladder submission and FL-09 demo submission. No new notebook or model
+run was made. The new case draft was fetched again and matched its saved text.
+
+This assignment is not submitted yet. Its remaining steps require the student's
+own interview answers and read-aloud review. These can be done from a phone;
+no new local run or recording is needed for this case-writing step. The portal
+estimate remains last checked at 111; no actual hours were entered.
