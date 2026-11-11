@@ -1,9 +1,9 @@
 # AI Fluency work status - latest update November 11, 2026
 
 All new code and documents are AI-assisted. No student time has been entered.
-Latest portal check, November 11: **20 assignment records across both tracks; both capstones accepted.**
+Latest portal check, November 11: **22 assignment records across both tracks; both capstones accepted.**
 The calculator feature and case package are now submitted for review. The case package's unfinished personal-review requirements were disclosed.
-The hour log shows **118 estimated hours**, leaving 22 to the portal target of 140.
+The hour log shows **125 estimated hours**, leaving 15 to the portal target of 140.
 The dated notes below preserve earlier states; they are not current missing-work claims.
 
 | Assignment | Actual evidence | What remains |
@@ -11,13 +11,13 @@ The dated notes below preserve earlier states; they are not current missing-work
 | FL-01 | Week 1 workbook prepared separately | True task list, tool/project setup, course-module evidence |
 | FL-06 | Design submitted October 8 | Review outcome and any changes |
 | Identity kit | One-page SVG, free font, four colors, actual SVG favicon; rendered and checked; submitted October 12 | Reviewer response; repository-context substitution disclosed |
-| Content map | Claim, ten draft wording options, three-page map, two case outlines and honest gather-list; submitted October 12 | Reviewer response and student's review; proposed pages are not live |
+| Content map | Claim, ten draft wording options, three-page map, two case outlines and honest gather-list; submitted October 12 | Reviewer response and student's review; three pages are now public |
 | FL-07 | Working local model run and saved trace inspected; 2:02 raw capture reviewed; build log updated; Windows 11 passed, 1 skipped | Submitted October 15 with the full-length smaller video copy; waiting for review |
 | Prompt Ladder | Six actual outputs and guided comparisons submitted October 20 | Any reviewer changes |
 | FL-04 | Current requirements inspected | No-code workflow, five real inputs, manual timing comparison, failure review |
 | FL-05 | Requirements inspected previously | Explainer and three real connector-call screenshots |
 | FL-09 | README, second evaluation and 3:54.5 narrated demo submitted November 10 | Waiting for review |
-| Portfolio cases, sitemap and claim | Proposed content and existing workbook | Student decisions/interview, setup proof, sketch and live website where required |
+| Portfolio cases, sitemap and claim | Cases submitted; digital sitemap, tutor context and saved AI review submitted November 11 | Review outcome; personal-review gaps and tool/account substitutions disclosed |
 | Maintenance plan | Exact next-case path, update steps, preserved repository context and real reminder; submitted October 13 | Reviewer response; Claude substitution disclosed |
 | Image curation | Actual code/test captures, kept initials SVG, actual rejected vector and reasons; submitted October 13 | Reviewer response; no portrait or live website claimed |
 | AI Fluency capstone | Accepted October 18 | Certificate generation if still needed; other assignments remain separate |
@@ -260,3 +260,21 @@ navigation was checked. The earlier GitHub evidence destinations loaded.
 Current Documents total: 122 estimated hours (21 assignment records: 78; two
 accepted capstones: 44). Remaining portal-estimate gap: 18. This supersedes the
 older 118-hour total above. Reviewer approval remains separate.
+
+
+## November 11: Draw the Path submitted for review
+Created portfolio/sitemap.svg with Home, Work, About and one evidence-to-feedback action.
+Saved the actual ChatGPT/Codex review in portfolio/sitemap-review.md and configured
+plain-English tutor instructions, proof statement, audience and action in PROJECT_CONTEXT.md.
+Corrected content-map.md's stale claims that no live site exists. The digital map
+rendered in GitHub; all three submitted files were fetched at immutable commit
+f18c0d5e7268634ce456f8741f4b1b9e97578718.
+
+The portal confirmed "Assignment submitted" and "Your work is waiting for review."
+Notes explicitly disclose a digital diagram instead of a hand-sketch photo,
+repository context instead of a Claude Project, and no evidence of the other
+named AI-account sign-ups. This relies on the task Q&A allowing available tools;
+reviewers may request those missing formats or account steps. No student sketch,
+separate Claude conversation, personal reflection, or actual work time was invented.
+The Documents page now shows 125 estimated hours, leaving 15 to the portal target.
+Submission is not approval; no manual work-time entry was created.
