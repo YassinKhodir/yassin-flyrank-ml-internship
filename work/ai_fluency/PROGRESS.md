@@ -237,3 +237,13 @@ cross-model experiment and manual timing comparison remain unverified. The
 profile contains a LinkedIn URL, but no private CV upload. No CV or booking
 address was invented or published. Hardening still needs its full checks and
 human review. Do not resubmit FL-09 or call the public portfolio PF-04 approved.
+
+
+## November 11: student phone check reported
+After being asked to open the public portfolio on a phone and try its Work-page
+calculator, the student confirmed: "I checked it its working." Record this as
+a student-reported successful phone check, not an independently inspected phone
+screenshot or a full mobile/browser test matrix. No phone model, browser version,
+specific test values, screenshot evidence or actual work duration was supplied.
+The separate phone-layout assignment's full brief and evidence requirements still
+need checking before claiming that whole assignment completed or submitted.
