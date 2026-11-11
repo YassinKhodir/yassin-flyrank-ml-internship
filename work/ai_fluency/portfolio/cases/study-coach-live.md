@@ -1,5 +1,5 @@
 # Study coach: checked live run
-AI-assisted case note, updated October 15, 2026.
+AI-assisted case note, updated November 10, 2026.
 
 ## Problem
 Technical notes can be hard to understand. The coach searches local notes,
@@ -25,15 +25,23 @@ This is a checked result for one example, not proof that every answer is correct
 
 ## Limits and next steps
 - Heading checks do not prove that an answer is correct.
-- The recorded answer does not include a practice question.
-- Earlier testing showed two conflicting dates without a direct question
-  asking which date was current.
-- FL-09 still needs its separate three-to-five-minute narrated live demo.
-- Prompt Ladder still needs its six actual outputs and the student's comparison.
+- The earlier raw recording does not include a practice question; the second evaluation's data-leakage answer does.
+- The earlier date failure was corrected by a local code guardrail. The second
+  Windows evaluation shows both dates and directly asks which version is current.
+- FL-09 was submitted November 10 with a 3:54.5 narrated demo and is waiting for review.
+- Prompt Ladder's six actual outputs and comparison notes were submitted October 20.
 - The student's reflection remains to be written in their own words.
 
 No broad evaluation score, measured time saving, student work duration,
-internship approval or additional hours are claimed.
+new internship approval or actual student hours are claimed.
+
+## Updated evidence
+The second evaluation contains three real Gemma search/answer traces and two
+local checks. The missing-topic refusal and conflicting-date check do not call
+the model. See [the full evaluation](../../study_coach/EVALUATION.md).
+The [unlisted demo](https://www.youtube.com/watch?v=7VjbMP6wQds) shows the live
+program, checking notes, conflicting dates and the CTR calculation. The portal
+shows 111 estimated hours; this case does not verify actual work time.
 
 ## Evidence
 - [Coach source](../../study_coach/coach.py)
