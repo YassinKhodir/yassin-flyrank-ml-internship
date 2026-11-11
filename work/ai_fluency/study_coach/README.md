@@ -15,7 +15,7 @@ The coach is a study aid. It does not decide which school deadline is correct.
 - Windows test record: 11 passed, one symlink test skipped for permissions.
   Earlier cloud tests passed all twelve; after the date fix, all fifteen coach tests passed in the assistant workspace. These tests simulate model decisions.
 - FL-07 was submitted October 15 with code, build log and the full 2:02 capture.
-- The second evaluation is documented in EVALUATION.md. A 3:54 demo recording was received November 10; its YouTube upload is still a private draft. FL-09 submission is pending.
+- The second evaluation is documented in EVALUATION.md. The 3:54 demo is published as an unlisted video. FL-09 submission is being prepared.
   No hours are verified by this README.
 
 ## Get the code
@@ -175,4 +175,14 @@ It labels a preflight result backend local_guardrail, model_called false,
 model null, and keeps the requested model separately. This supersedes the
 older after-search-only description above. The student confirmed the direct
 clarification on Windows. The raw v2 results stay private.
-The received demo is 3 minutes 54.5 seconds and contains a recorded audio track. Sampled frames show a live data-leakage answer, the practice notes, the date guardrail and a CTR calculation. It is uploaded to YouTube as a private draft. The unlisted video link and final FL-09 submission remain pending. No submission or approval is claimed yet.
+The received demo is 3 minutes 54.5 seconds and contains a recorded audio track. Sampled frames show a live data-leakage answer, the practice notes, the date guardrail and a CTR calculation. It is published as an unlisted YouTube video. The link is below; reviewer approval remains separate.
+
+## FL-09 demo link
+[Watch the study coach demo (unlisted)](https://www.youtube.com/watch?v=7VjbMP6wQds)
+
+Published November 10, 2026. The recording is 3 minutes 54.5 seconds (YouTube
+rounds the player display to 3:55). It shows the real local program, checking
+practice notes, conflicting dates and the CTR calculation. The video description
+discloses AI assistance. The [second evaluation](EVALUATION.md) documents the
+five case checks and remaining limits. This demo is separate from the FL-07
+raw capture. No measured student work hours are implied by its duration.
