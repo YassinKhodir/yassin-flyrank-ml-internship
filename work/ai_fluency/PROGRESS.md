@@ -247,3 +247,16 @@ screenshot or a full mobile/browser test matrix. No phone model, browser version
 specific test values, screenshot evidence or actual work duration was supplied.
 The separate phone-layout assignment's full brief and evidence requirements still
 need checking before claiming that whole assignment completed or submitted.
+
+
+## November 11: phone-testing assignment submitted
+Open It on Your Phone was submitted with the public portfolio and fix log at
+212f77017acee265afecf0356ae5e0fd7d756fad. Portal confirmed submission and waiting
+for review. The notes distinguish the student's reported real phone check from
+assistant browser checks, with no invented screenshot, defect or actual work time.
+The log includes the 768-pixel view, external links, contrast calculations and
+actual public-access fix. The YouTube player loaded at 3:55; Home/About/Work
+navigation was checked. The earlier GitHub evidence destinations loaded.
+Current Documents total: 122 estimated hours (21 assignment records: 78; two
+accepted capstones: 44). Remaining portal-estimate gap: 18. This supersedes the
+older 118-hour total above. Reviewer approval remains separate.
