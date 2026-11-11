@@ -193,3 +193,20 @@ Student-confirmed study-coach purpose and date-handling preference are included.
 No ML reflection or read-aloud review was invented. The case assignment remains
 unsubmitted pending its personal-review requirements. No estimated or actual
 hours were added for preparing these documents.
+
+
+## November 11: working portfolio website built
+Home, Work and About pages now exist, with both cases, source/evaluation links
+and the recorded demo. A single browser-only CTR calculator works with normal
+inputs and rejects zero-impression calculations clearly. Eight arithmetic/input
+checks passed; page structure and local asset checks passed. Browser navigation
+and two visible calculator outputs were checked. Three pages were visually
+inspected in 390-pixel frames, not on the student's phone.
+
+The Site deployment succeeded as owner-private. It cannot be submitted as a
+public reviewer URL yet. Public access needs the user's explicit request.
+The source guide, DNS explanation, feature explanation and check record are saved
+under portfolio. See [website/README.md](portfolio/website/README.md) for the
+exact remaining requirements. No LinkedIn/CV/booking links, official badge,
+phone test, read-aloud review or student comprehension is invented.
+No new assignment submission or added hours is claimed. Last portal estimate: 111.
