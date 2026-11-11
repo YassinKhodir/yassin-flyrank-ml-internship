@@ -1,10 +1,11 @@
 # The Through-Line: content and action map
-AI-assisted assignment deliverable, updated November 10, 2026. No student hours claimed.
+AI-assisted assignment deliverable, updated November 11, 2026. No student hours claimed.
 
 ## One audience and one action
 Audience: a FlyRank internship reviewer.
 Action: inspect the linked project evidence and give feedback.
-This plan is for a proposed portfolio. The pages below are not claimed to be live.
+The three pages are now public: https://yassin-khodir-internship-portfolio.quickchutney32.chatgpt.site/
+The original plan is retained below with the current review path. See [sitemap.svg](sitemap.svg).
 
 ## One-line claim
 **My projects show simple code, clear checks, and honest limits.**
@@ -33,7 +34,7 @@ CTA means call to action: the next thing the reader is asked to do.
 
 | Page | Sections in order | Case shown | Named CTA and destination |
 | --- | --- | --- | --- |
-| Home | One-line claim; approved ML case preview; study-coach preview with pending label; evidence links | Lead with Google Search Ranking & Discoverability, approved October 6; then the AI study-coach prototype | View project evidence -> Work page's evidence section |
+| Home | One-line claim; approved ML case preview; study-coach preview with honest limits; evidence links | Lead with Google Search Ranking & Discoverability, approved October 6; then the AI study-coach prototype | View project evidence -> Work page's evidence section |
 | Work | ML problem and scope; repository evidence; confirmed approval status; study-coach problem; actual implementation; checks; limits; next steps | ML and study coach each use problem / work / observed result | Inspect the source and checks -> corresponding repository files |
 | About | Name and UIW CIS study; why simple explanations matter; AI-assistance note; review request | Links back to the two work cases; no new case invented | Review my project evidence -> Work page's evidence section |
 
@@ -59,7 +60,7 @@ Evidence: https://github.com/YassinKhodir/yassin-flyrank-ml-internship/tree/ai-f
 ## Current case document
 [Read both framed cases](framed-cases.md). It includes the voice card, bio,
 review action, and before/after wording. It identifies remaining personal-review
-requirements explicitly. It is not a claim of a live website or a completed interview.
+requirements explicitly. The website is now public; the personal-review gaps remain disclosed.
 
 ## Still need to gather
 - The actual completion certificate PDF; approval is already confirmed.
@@ -67,7 +68,7 @@ requirements explicitly. It is not a claim of a live website or a completed inte
 - Real study-coach outputs and both evaluation rounds are documented.
 - FL-07 raw capture and FL-09 narrated demo have been submitted.
 - Student's own decisions and reflection for the case-writing interview.
-- A live website, working page links, and phone-size screenshots.
+- Website and page links now exist. The student reported a successful phone check; no phone screenshot was supplied.
 - Feedback from another reader; no testimonial is claimed.
 - Any required tool/project setup proof.
 
@@ -76,3 +77,11 @@ Use the identity kit in the same portfolio folder.
 Keep the evidence links next to each claim.
 Put unfinished work behind a visible pending label.
 Use the same CTA wording throughout.
+
+
+## November 11 pressure-test change
+The saved AI review is [sitemap-review.md](sitemap-review.md).
+Make the action concrete: inspect the source/checks/demo, then leave feedback in the existing GitHub pull request #1.
+Contact is a section on About, not a fourth page. Work remains the evidence hub.
+Remove stale statements that the pages are only proposed or that a live website is missing.
+These are AI-assisted document changes; no student interview or review time is inferred.
