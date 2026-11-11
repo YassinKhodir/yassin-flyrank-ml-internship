@@ -1,9 +1,9 @@
 # AI Fluency work status - latest update November 10, 2026
 
 All new code and documents are AI-assisted. No student time has been entered.
-The portal was checked after the October 13 submissions: **AI Fluency 5/5 qualifying assignment submissions; capstone in review.**
-This counter counts submissions; it is not a claim that every assignment or the capstone has been approved.
-Machine Learning remains 5/5 with its capstone accepted.
+Latest portal check, November 10: **AI Fluency 8/26 assignment records; ML 10/10. Both track capstones are accepted. FL-09 is submitted and waiting for review.**
+The hour log shows **111 estimated hours**, leaving 29 to the portal target of 140.
+The dated notes below preserve earlier states; they are not current missing-work claims.
 
 | Assignment | Actual evidence | What remains |
 | --- | --- | --- |
@@ -12,14 +12,14 @@ Machine Learning remains 5/5 with its capstone accepted.
 | Identity kit | One-page SVG, free font, four colors, actual SVG favicon; rendered and checked; submitted October 12 | Reviewer response; repository-context substitution disclosed |
 | Content map | Claim, ten draft wording options, three-page map, two case outlines and honest gather-list; submitted October 12 | Reviewer response and student's review; proposed pages are not live |
 | FL-07 | Working local model run and saved trace inspected; 2:02 raw capture reviewed; build log updated; Windows 11 passed, 1 skipped | Submitted October 15 with the full-length smaller video copy; waiting for review |
-| Prompt Ladder | Six cumulative prompts, local-model runner | Six real model outputs and student's comparison notes |
+| Prompt Ladder | Six actual outputs and guided comparisons submitted October 20 | Any reviewer changes |
 | FL-04 | Current requirements inspected | No-code workflow, five real inputs, manual timing comparison, failure review |
 | FL-05 | Requirements inspected previously | Explainer and three real connector-call screenshots |
-| FL-09 | Setup README exists; current requirements inspected | Real evaluation evidence and three-to-five-minute narrated live demo |
+| FL-09 | README, second evaluation and 3:54.5 narrated demo submitted November 10 | Waiting for review |
 | Portfolio cases, sitemap and claim | Proposed content and existing workbook | Student decisions/interview, setup proof, sketch and live website where required |
 | Maintenance plan | Exact next-case path, update steps, preserved repository context and real reminder; submitted October 13 | Reviewer response; Claude substitution disclosed |
 | Image curation | Actual code/test captures, kept initials SVG, actual rejected vector and reasons; submitted October 13 | Reviewer response; no portrait or live website claimed |
-| AI Fluency capstone | Maintenance/context/prototype package submitted October 13 against the displayed brief; portal confirms in review | Review outcome and any requested broader project evidence |
+| AI Fluency capstone | Accepted October 18 | Certificate generation if still needed; other assignments remain separate |
 
 ## Environment distinction
 As of the assistant's October 13 workspace check, Ollama was not installed or listening there. The student has since supplied a handoff describing a live Gemma/Ollama run on their own computer (see the October 15 update below).
@@ -183,3 +183,13 @@ This assignment is not submitted yet. Its remaining steps require the student's
 own interview answers and read-aloud review. These can be done from a phone;
 no new local run or recording is needed for this case-writing step. The portal
 estimate remains last checked at 111; no actual hours were entered.
+
+
+## Case package prepared without further interview questions
+Both project cases are saved in portfolio/framed-cases.md with source links,
+a plain before/after example and a requirement check. The content map now points
+to the package and reflects the submitted demo and completed evaluation.
+Student-confirmed study-coach purpose and date-handling preference are included.
+No ML reflection or read-aloud review was invented. The case assignment remains
+unsubmitted pending its personal-review requirements. No estimated or actual
+hours were added for preparing these documents.
