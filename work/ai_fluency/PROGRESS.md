@@ -1,8 +1,9 @@
-# AI Fluency work status - latest update November 10, 2026
+# AI Fluency work status - latest update November 11, 2026
 
 All new code and documents are AI-assisted. No student time has been entered.
-Latest portal check, November 10: **AI Fluency 8/26 assignment records; ML 10/10. Both track capstones are accepted. FL-09 is submitted and waiting for review.**
-The hour log shows **111 estimated hours**, leaving 29 to the portal target of 140.
+Latest portal check, November 11: **20 assignment records across both tracks; both capstones accepted.**
+The calculator feature and case package are now submitted for review. The case package's unfinished personal-review requirements were disclosed.
+The hour log shows **118 estimated hours**, leaving 22 to the portal target of 140.
 The dated notes below preserve earlier states; they are not current missing-work claims.
 
 | Assignment | Actual evidence | What remains |
@@ -210,3 +211,29 @@ under portfolio. See [website/README.md](portfolio/website/README.md) for the
 exact remaining requirements. No LinkedIn/CV/booking links, official badge,
 phone test, read-aloud review or student comprehension is invented.
 No new assignment submission or added hours is claimed. Last portal estimate: 111.
+
+
+## November 11: public portfolio and two review submissions
+The portfolio audience was changed to public after the user's go-ahead. The
+cloud browser opened Home and Work without a sign-in gate. The public calculator
+returned 10% for 10/100 and a clear refusal to divide by zero. The site is:
+https://yassin-khodir-internship-portfolio.quickchutney32.chatgpt.site/
+
+- Make It Do Something: submitted the live calculator, feature explanation and
+  check record. Portal confirmed "Assignment submitted" and waiting for review.
+  AI assistance and the lack of an independent student explanation were disclosed.
+- Frame It as Cases: submitted the two-case document and live Work page. Portal
+  confirmed submission and waiting for review. The remaining ML interview and
+  read-aloud review were disclosed in notes and the document. This is not a claim
+  those learning steps were completed.
+
+The hour log shows 118 estimated hours: 20 assignment records worth 74 and two
+accepted capstones worth 44. These automatic estimates are separate from review
+approval or actual student time. No work-time entry was created.
+
+Not all remaining assignments are complete. The real phone test, full personal
+review, verified CV/booking links and backlinks, required course/tutorial work,
+cross-model experiment and manual timing comparison remain unverified. The
+profile contains a LinkedIn URL, but no private CV upload. No CV or booking
+address was invented or published. Hardening still needs its full checks and
+human review. Do not resubmit FL-09 or call the public portfolio PF-04 approved.
