@@ -3,8 +3,8 @@
 Voice card: **Simple, direct, clear, honest, calm, specific.**
 
 AI-assisted draft, November 10, 2026. Written from saved project evidence.
-This file covers both projects in content-map.md. It is not a completed student
-interview or a record of reading the text aloud. ChatGPT/Codex and this saved
+This file covers both projects in content-map.md. The study-coach interview has
+started; the full interview and read-aloud review are not complete. ChatGPT/Codex and this saved
 context are used instead of a configured Claude Project.
 
 ## Reader and action
@@ -58,6 +58,13 @@ check each recommendation before taking action.
 Technical notes can be hard to understand. A study helper should explain the
 notes in simple words and show where its answer came from. It should not
 invent a topic or silently choose between conflicting deadlines.
+
+### Student-confirmed purpose and choice
+The student agreed that the goal is to explain difficult technical notes in
+simple English and show where the answer came from. He confirmed seeing the
+coach show two different due dates and ask which version was current. He wants
+the coach to keep asking when notes disagree, rather than guess. This wording
+summarizes a guided conversation; it is not an unaided written reflection.
 
 ### What was done
 The AI-assisted Python program reads small local text files and searches for
@@ -128,5 +135,6 @@ review; it is not represented as an unaided student edit.
 - Have the student read the final text aloud and remove anything they cannot
   explain or stand behind.
 - Keep private interview notes outside the public repository.
-- No interview, read-aloud check, actual work time, or assignment completion
-  is claimed by this draft.
+- The study-coach purpose, observed date behavior and preference are confirmed.
+  The ML interview, full wording review and read-aloud check remain open.
+  No actual work time or assignment completion is claimed by this draft.
