@@ -26,12 +26,25 @@ metadata and footnotes are smaller. Line spacing is 1.7 for ordinary body text.
 The calculator refuses zero-impression division and invalid event counts. It
 runs locally in the browser and does not upload the entered numbers.
 
-## Checks still needed before claiming the whole assignment complete
-- Tablet-width inspection and a complete link-by-link audit, including demo/repo.
-- Inspect all small text and the actual foreground/background pairings.
-- Any real defects found must be logged and fixed; do not invent before screenshots.
-- Phone screenshots are encouraged by the brief but no screenshot was supplied.
-- No claim of a complete accessibility audit, speed score or reviewer approval.
+## Additional checks completed
+- A 768-pixel browser frame of Work was inspected. The title, navigation and
+  case columns fitted in the sampled view. This was not a physical tablet test.
+- Desktop Home → About → Work navigation worked. Earlier desktop Work and
+  calculator checks passed, alongside the student's reported real phone check.
+- All distinct external destinations were opened: public repository, capstone,
+  setup README, evaluation, coach.py, review PR and the YouTube demo. GitHub
+  pages loaded with their expected titles; the video player loaded at 3:55.
+- Internal section destinations match the IDs in the generated HTML.
+- Contrast calculations on white: teal #0F766E 5.47:1; body #111827 17.74:1;
+  secondary #4B5563 7.56:1; muted #6B7280 4.83:1. These pairs exceed 4.5:1.
+- The site uses one small SVG monogram and local fonts; no large gallery or
+  embedded video image was added. The video is linked rather than embedded.
 
-The real phone step is reported complete. The full assignment is still being
-checked. Automated build/check time is not entered as student work time.
+## Limits
+No phone screenshot was supplied. The student's statement is the evidence for
+physical phone use. Small metadata/footnotes are below the 16-pixel body size;
+users can zoom. This is a focused readability check, not a full accessibility
+certification or speed test. No phone-layout defect was reported, so no invented
+before/after phone images or layout fixes are included. The actual access fix
+is described above. AI assistance was used for the site and this check log.
+No actual student work duration is inferred.
