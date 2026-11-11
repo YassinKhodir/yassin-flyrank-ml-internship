@@ -15,7 +15,7 @@ The coach is a study aid. It does not decide which school deadline is correct.
 - Windows test record: 11 passed, one symlink test skipped for permissions.
   Earlier cloud tests passed all twelve; after the date fix, all fifteen coach tests passed in the assistant workspace. These tests simulate model decisions.
 - FL-07 was submitted October 15 with code, build log and the full 2:02 capture.
-- The second evaluation is documented in EVALUATION.md. The 3:54 demo is published as an unlisted video. FL-09 submission is being prepared.
+- The second evaluation is documented in EVALUATION.md. The 3:54 demo is published as an unlisted video. FL-09 was submitted November 10, 2026 and is waiting for review.
   No hours are verified by this README.
 
 ## Get the code
