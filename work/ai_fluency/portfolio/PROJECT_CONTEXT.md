@@ -37,7 +37,8 @@ Eight calculator/input checks passed. The student reported the phone check worke
 The phone assignment was submitted November 11; waiting for review.
 Cases and calculator assignments were also submitted for review with their learning-step gaps disclosed.
 ML interview, read-aloud review and independent student feature explanation are not claimed complete.
-Last checked portal total: 122 estimated hours, not a student time record.
+Draw the Path was submitted November 11 with its tool/account substitutions disclosed; waiting for review.
+Last checked portal total: 125 estimated hours, not a student time record.
 
 ## Saved project and tool substitution
 Project name: Yassin portfolio build.
