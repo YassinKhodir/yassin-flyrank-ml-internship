@@ -13,9 +13,9 @@ The coach is a study aid. It does not decide which school deadline is correct.
 - [Evaluation](EVALUATION.md) reviews five saved results, including a date-conflict
   failure and a refusal made before the model runs.
 - Windows test record: 11 passed, one symlink test skipped for permissions.
-  Earlier cloud tests passed all twelve. These tests simulate model decisions.
+  Earlier cloud tests passed all twelve; after the date fix, all fifteen coach tests passed in the assistant workspace. These tests simulate model decisions.
 - FL-07 was submitted October 15 with code, build log and the full 2:02 capture.
-- The second evaluation is documented in EVALUATION.md. FL-09 still needs a 3–5 minute narrated live demo.
+- The second evaluation is documented in EVALUATION.md. A 3:54 demo recording was received November 10; its YouTube upload is still a private draft. FL-09 submission is pending.
   No hours are verified by this README.
 
 ## Get the code
@@ -43,7 +43,7 @@ python -m unittest discover -s tests -v
 
 If your machine uses `python3`, replace `python` with `python3`.
 The first command prints a passage with its heading. It says MOCK MODE because
-no AI model runs. The suite contains twelve tests. A Windows symlink test may be skipped when permissions are unavailable.
+no AI model runs. The coach has fifteen tests, with additional tests for the prompt runners. A Windows symlink test may be skipped when permissions are unavailable.
 
 ## Use a real local model
 
@@ -81,10 +81,11 @@ mock tests check the program's structure, not the model's teaching quality.
 ## Architecture
 ```mermaid
 flowchart TD
-    A["Question and local notes"] --> B["Read files; block suspicious passages"]
-    B --> C["Word search"]
-    C --> D["Local Ollama agent: search, answer or clarify"]
-    D --> E["Answer and source headings"]
+    A["Question and local notes"] --> B["Read, filter and search notes"]
+    B -->|Missing support or conflicting dates| C["Local refusal or clarification"]
+    B -->|Supported topic| D["Local Ollama agent"]
+    D -->|Search again| B
+    D --> E["Checked action and source headings"]
 ```
 
 If the initial search finds nothing, the program returns a refusal before
@@ -153,8 +154,7 @@ Numeric dates, abbreviated month names, and passages outside the retrieved set
 are not covered. Check the official assignment source for the real deadline.
 
 The study-coach suite now has 15 tests; all passed in the assistant workspace.
-The earlier saved live results remain unchanged. A live check of this update
-is still needed. From this folder, after pulling the branch:
+The earlier saved results remain unchanged. The second Windows evaluation confirmed the updated local date check. From this folder, after pulling the branch:
 
 ```sh
 python coach.py --notes notes --question "What is the assignment due date?" --backend ollama --model gemma4:e2b --output sessions/date-check-v2.json
@@ -175,4 +175,4 @@ It labels a preflight result backend local_guardrail, model_called false,
 model null, and keeps the requested model separately. This supersedes the
 older after-search-only description above. The student confirmed the direct
 clarification on Windows. The raw v2 results stay private.
-The narrated 3–5 minute FL-09 demo and unlisted video link remain outstanding.
+The received demo is 3 minutes 54.5 seconds and contains a recorded audio track. Sampled frames show a live data-leakage answer, the practice notes, the date guardrail and a CTR calculation. It is uploaded to YouTube as a private draft. The unlisted video link and final FL-09 submission remain pending. No submission or approval is claimed yet.
