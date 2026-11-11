@@ -5,10 +5,10 @@ Prepared November 11, 2026 with AI assistance.
 ## Deployed site
 https://yassin-khodir-internship-portfolio.quickchutney32.chatgpt.site/
 
-The hosting deployment succeeded. It is currently owner-private and asks visitors
-to sign in with ChatGPT. It is not yet a public URL suitable for an outside
-FlyRank reviewer. Public access requires the user's explicit request; it has
-not been changed just to satisfy deployment.
+The hosting deployment succeeded. Public access was enabled November 11 after
+the user's go-ahead. The cloud browser loaded Home and Work without a ChatGPT
+sign-in gate, then ran the live calculator: 10 clicks / 100 impressions returned
+10% with the benchmark warning. This replaces the earlier private-only status.
 
 Source Site ID: appgprj_6af491b73ecc81918f60d29f64f74411
 Hosted source commit: 4c5b23c097f9189939d823dd89fc97b52c13ecde
@@ -46,13 +46,14 @@ its separate source repository; do not invent a new Site ID during updates.
 ## What remains
 | Assignment | Prepared evidence | Not yet complete |
 | --- | --- | --- |
-| Empty but Live | Deployed website, screenshot, loaded identity/case context | Public access; student's actual second-device check; stack assignment status |
-| PF-04 personal website | Three pages, source links, DNS explanation | Public access; verified LinkedIn/CV/booking links; links back from LinkedIn/CV; student understanding; official badge asset |
-| Make It Do Something | Browser calculator and checks, plain explanation | Public live feature evidence; student's explanation of data flow |
+| Empty but Live | Deployed website, screenshot, loaded identity/case context | Student's actual second-device check; stack assignment status |
+| PF-04 personal website | Three pages, source links, DNS explanation | Verified LinkedIn/CV/booking links; links back from LinkedIn/CV; student understanding; official badge asset |
+| Make It Do Something | Browser calculator and checks, plain explanation | Live feature checked; student's own explanation remains to be confirmed |
 | Open It on Your Phone | 390-pixel visual layout check | Real student phone test and any fixes |
 | Frame It as Cases | Both cases, voice card, bio, before/after example | Remaining student interview and read-aloud review |
 
-These assignments have not been marked fully completed or submitted using the
-private website. A browser iframe is not a physical phone. AI-drafted technical
+The feature can now be sent for review with AI assistance and the remaining
+student-review limitation disclosed. This file alone does not record a successful
+portal submission; see PROGRESS.md for that status. A browser iframe is not a physical phone. AI-drafted technical
 explanations are not described as unaided student reflections. No extra portal
 or actual work hours are claimed. Last observed portal total remains 111 estimates.
