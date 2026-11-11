@@ -122,19 +122,26 @@ No private phone number or email is needed in the public page.
 Generic AI line: "I leverage cutting-edge AI to deliver transformative,
 high-impact solutions."
 
-Plain edit: "The study coach explains local notes. I check its answer against
-the notes because it can still make mistakes."
+Plain edit: "The study coach explains local notes. When the notes show two
+different due dates, it asks which one is current instead of guessing."
 
 Both lines are AI-drafted examples. The plain edit still needs the student's
 review; it is not represented as an unaided student edit.
 
-## Before this assignment can be submitted
-- Ask the student about each project's problem, one decision, and the result,
-  one question at a time. Save only approved public wording.
-- Let the student correct the proposed voice card, bio, cases, and plain edit.
-- Have the student read the final text aloud and remove anything they cannot
-  explain or stand behind.
-- Keep private interview notes outside the public repository.
-- The study-coach purpose, observed date behavior and preference are confirmed.
-  The ML interview, full wording review and read-aloud check remain open.
-  No actual work time or assignment completion is claimed by this draft.
+## Requirement check
+| Requirement | Evidence and status |
+| --- | --- |
+| Five-to-seven-word voice card | Six words at the top. |
+| Every case in the content map | Both ML and study-coach cases are included. |
+| Problem, work, result | Included separately for both projects. |
+| Bio and one next action | Included; action is to inspect evidence and give feedback. |
+| Before/after wording | Included as an AI-assisted example based on observed behavior. |
+| Student interview | Study-coach purpose, observed date behavior and preference confirmed. ML interview is not complete. |
+| Student's own editing and read-aloud review | Not evidenced; no completion claim. |
+| Claude Project | Repository context used with ChatGPT/Codex; substitution disclosed. |
+
+The written package is prepared. This assignment has not been submitted as
+fully completed. Personal reflections, a completed interview and a read-aloud
+review cannot be inferred from saved code or from authorization to handle the
+writing. No actual work time is claimed. Private interview notes stay outside
+the public repository.
