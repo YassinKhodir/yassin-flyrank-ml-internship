@@ -19,3 +19,9 @@ Checks were performed by the assistant, not recorded as student work hours.
 No forms or trackers are used. The calculator does not make network requests.
 The website has no LinkedIn, CV, booking link or official badge yet.
 Public access and the student's actual second-device check are separate steps.
+
+## Public deployment check
+Public access was enabled November 11. Home and Work loaded without a sign-in
+prompt in the cloud browser. The live calculator returned 10% for 10 clicks and
+100 impressions, with the benchmark warning. This is a browser test by the
+assistant; the student's real phone and explanation checks remain separate.
