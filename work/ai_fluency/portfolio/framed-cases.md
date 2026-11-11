@@ -1,4 +1,4 @@
-# Portfolio cases: review draft
+# Portfolio cases: submitted review draft
 
 Voice card: **Simple, direct, clear, honest, calm, specific.**
 
@@ -140,8 +140,9 @@ review; it is not represented as an unaided student edit.
 | Student's own editing and read-aloud review | Not evidenced; no completion claim. |
 | Claude Project | Repository context used with ChatGPT/Codex; substitution disclosed. |
 
-The written package is prepared. This assignment has not been submitted as
-fully completed. Personal reflections, a completed interview and a read-aloud
+The written package is prepared. This package was submitted for review November 11, 2026. The submission notes
+explicitly disclose the remaining personal-review requirements; it is not
+claimed as fully completed or approved. Personal reflections, a completed interview and a read-aloud
 review cannot be inferred from saved code or from authorization to handle the
 writing. No actual work time is claimed. Private interview notes stay outside
 the public repository.
