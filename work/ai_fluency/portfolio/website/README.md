@@ -57,3 +57,11 @@ student-review limitation disclosed. This file alone does not record a successfu
 portal submission; see PROGRESS.md for that status. A browser iframe is not a physical phone. AI-drafted technical
 explanations are not described as unaided student reflections. No extra portal
 or actual work hours are claimed. Last observed portal total remains 111 estimates.
+
+## Submission update
+On November 11, the live calculator and explanation were successfully submitted
+under Make It Do Something. The case package was also submitted for review.
+Both notes disclose AI assistance and remaining student-review steps. These
+submissions are not reviewer approvals. The current portal total is 118 estimated
+hours (74 assignments + 44 accepted capstones), with 22 to the estimate goal.
+PF-04, the real phone check and hardening review remain incomplete.
