@@ -53,7 +53,29 @@ Those observations are historical evidence, not repeated phone tests today.
 - A mentor or structured peer hardening review has not happened.
 - Search indexing is unconfirmed.
 - A full accessibility audit and third-party social preview rendering are not established.
-- Speed-check outcome is recorded separately below once available.
+- Automated Lighthouse scores are a single lab run, not field-user data or a full manual accessibility/security audit.
 - No assignment pass, reviewer approval, student learning time or actual hours is inferred.
 
 This report prepares the required where-it-breaks list. The checkpoint remains incomplete until the remaining required checks and real review happen.
+
+
+## Free speed check completed
+Google PageSpeed Insights home-page mobile report, November 12, 2026 at 11:08 AM CST:
+https://pagespeed.web.dev/analysis/https-yassin-khodir-internship-portfolio-quickchutney32-chatgpt-site/odv9cibima?form_factor=mobile
+
+| Category/metric | Observed result |
+| --- | --- |
+| Performance | 100 |
+| Accessibility | 100 |
+| Best Practices | 100 |
+| SEO | 100 |
+| First Contentful Paint | 0.8 seconds |
+| Largest Contentful Paint | 0.8 seconds |
+| Total Blocking Time | 0 milliseconds |
+| Cumulative Layout Shift | 0.012 |
+| Speed Index | 0.8 seconds |
+
+The report used Lighthouse 13.6.0, an emulated Moto G Power, slow 4G throttling and a single initial page load.
+It reported no real-user field data. This is a home-page lab result, not a new physical-phone test or a score for every page.
+The initial Work-page attempt did not finish with usable scores and showed an invalid-URL message; the home-page retry completed.
+100 SEO does not establish search indexing. 100 Accessibility does not replace the report's manual checks.
