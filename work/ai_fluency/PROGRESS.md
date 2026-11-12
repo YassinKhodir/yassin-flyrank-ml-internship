@@ -1,9 +1,9 @@
 # AI Fluency work status - latest update November 12, 2026
 
 All new code and documents are AI-assisted. No student time has been entered.
-Latest portal check, November 12: **23 assignment records across both tracks; both capstones accepted.**
+Latest portal check, November 12: **24 assignment records across both tracks; both capstones accepted.**
 The calculator feature and case package are now submitted for review. The case package's unfinished personal-review requirements were disclosed.
-The hour log shows **127 estimated hours**, leaving 13 to the portal target of 140.
+The hour log shows **147 estimated hours**, which is 7 above the portal target of 140.
 The dated notes below preserve earlier states; they are not current missing-work claims.
 
 | Assignment | Actual evidence | What remains |
@@ -369,3 +369,29 @@ a student's own-words submission.
 The portal estimate remains last verified at 127. Adding the badge does not
 establish 13 actual hours or finish a 20-hour assignment. No incomplete launch
 assignment was submitted just to cross the numerical target.
+
+
+## November 12: launch package submitted; portal estimate target reached
+The site now has a working page-view counter and public analytics dashboard.
+The assistant built and tested the Worker and storage integration. A production
+compression problem was fixed: pages are served as plain bytes rather than
+compressed data with a missing encoding header. Version 5 deployed successfully
+from Site source commit 9f0eaa04848ee9c525eff0cc72008f149b21de2a.
+The live Work counter changed from 0 to 1 after a test visit. The calculator
+still returned 10% for 10 clicks and 100 impressions. These are assistant QA
+visits, not unique visitors or student work time.
+
+Plant Your Flag: Domain + Badge was submitted with the public site, analytics
+URL, immutable launch-evidence.md report and analytics-installed.jpg screenshot.
+After reload the portal confirmed submission, waiting for review, and the saved
+attachment. The task Q&A explicitly permits any free subdomain. The real issued
+Machine Learning badge is installed. No custom-domain purchase or new physical
+phone test is claimed. The earlier student phone confirmation predates this
+update; that limit and the pending hardening review were disclosed.
+
+The Documents page now shows **147 estimated hours**. The numerical target of
+140 has been exceeded by 7. This is the portal's automatic workload estimate,
+not 147 verified clock hours. No student time entry was created. UIW acceptance,
+reviewer approvals and remaining student-specific learning steps are separate.
+Reference code and full launch checks are under portfolio/analytics and
+portfolio/launch-evidence.md. Private logs and screenshots are not in this repo.
