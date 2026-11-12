@@ -307,3 +307,23 @@ sent clarification already copies Alen and identifies pending individual
 assignment reviews as the concern. No duplicate message was sent here.
 Last verified portal total remains 125 estimated hours; this preparation adds
 no qualifying submission or actual time entry.
+
+
+## November 12: live website hardening work
+Paused the student timing requirement rather than inventing values. Continued
+with actual browser checks for Break Your Own Site: empty/negative/fractional
+and unsafe inputs, zero values, normal arithmetic and a rapid double click.
+Expected validation messages and the correct arithmetic were observed.
+Found missing social-share metadata. Fixed and published all three pages with
+Open Graph and Twitter-card fields, canonical URLs, a 1200x630 share image,
+robots.txt and sitemap.xml. Site version 2, source commit
+7f8dcb672d157071c47803d2266ae1214b50f836; native deployment succeeded publicly.
+The live Work DOM and published image were verified after deployment.
+
+A free Google PageSpeed Insights mobile run on Home completed: performance,
+accessibility, best practices and SEO each scored 100. It is a single emulated
+lab run, not a full audit or real-user result. Exact report and metrics are in
+portfolio/hardening-review.md. Name/host web search returned no results, so
+search indexing is not claimed. The checkpoint still needs its remaining
+new-device/browser evidence and mentor or structured-peer review. Not submitted
+as a passed checkpoint; no new assignment hours or actual time entry added.
