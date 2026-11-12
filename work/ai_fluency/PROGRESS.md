@@ -344,3 +344,28 @@ AI Fluency certificate generation is available, but its dialog requires the
 final internship end date and publishes that date on the verification record.
 The dialog was cancelled without issuing a certificate, because work continues
 and no final end date has been confirmed. ML certificate remains already issued.
+
+
+## November 12: official badge verified and published
+Checked Plant Your Flag (20 estimated hours) and PF-04 (6 estimated hours)
+against the portal briefs. They are not complete from the existing website alone.
+The issued ML certificate reference FR-D11-46B4B-A9584 was read from the portal.
+Its public verifier confirms Yassin Khodir, Machine Learning, July 2026 cohort,
+issued October 6. The official badge generator supplied the HTML. The cohort
+label was disabled to avoid using its unrelated default cohort.
+
+Installed that genuine issued-credential badge in all three page footers, with
+an explicit Machine Learning label. Site version 3 deployed from source commit
+900ee5678aeeea609807f4d14b8c1c74ce1d211f. Three generated footer links passed
+structural checks; the live Home footer was inspected. The credential verifier
+was opened and confirmed. No new certificate or final end date was generated.
+
+Plant Your Flag remains unsubmitted: no working analytics installation, no
+custom-domain purchase or claim of a truly-zero budget, and no newly reported
+physical-phone check after this update. PF-04 also still lacks CV/booking links,
+backlinks and independent student explanation. Its AI-written DNS draft is not
+a student's own-words submission.
+
+The portal estimate remains last verified at 127. Adding the badge does not
+establish 13 actual hours or finish a 20-hour assignment. No incomplete launch
+assignment was submitted just to cross the numerical target.
