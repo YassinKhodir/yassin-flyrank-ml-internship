@@ -1,5 +1,5 @@
 # Website hardening: actual checks and remaining limits
-AI-assisted checks, November 12, 2026. Not submitted as a passed checkpoint.
+AI-assisted checks, November 12, 2026. Prepared for mentor hardening review; no passed checkpoint is claimed.
 
 ## Site
 https://yassin-khodir-internship-portfolio.quickchutney32.chatgpt.site/
@@ -79,3 +79,9 @@ The report used Lighthouse 13.6.0, an emulated Moto G Power, slow 4G throttling 
 It reported no real-user field data. This is a home-page lab result, not a new physical-phone test or a score for every page.
 The initial Work-page attempt did not finish with usable scores and showed an invalid-URL message; the home-page retry completed.
 100 SEO does not establish search indexing. 100 Accessibility does not replace the report's manual checks.
+
+
+## Request to the FlyRank reviewer
+Please review the observed edge cases, deployed metadata fix, search result and completed mobile lab report.
+Please identify any must-fixes before this checkpoint can pass. Remaining new-device/browser coverage and unconfirmed search indexing are disclosed above.
+This submission requests the mentor review; it does not claim that a mentor or structured peer has already reviewed it or that its must-fixes have been cleared.
