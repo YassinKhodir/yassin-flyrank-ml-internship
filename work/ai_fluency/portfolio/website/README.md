@@ -65,3 +65,12 @@ Both notes disclose AI assistance and remaining student-review steps. These
 submissions are not reviewer approvals. The current portal total is 118 estimated
 hours (74 assignments + 44 accepted capstones), with 22 to the estimate goal.
 PF-04, the real phone check and hardening review remain incomplete.
+
+
+## November 12 metadata update
+Live Site version 2 was deployed from source commit 7f8dcb672d157071c47803d2266ae1214b50f836.
+All three pages now include canonical links, Open Graph and Twitter-card metadata.
+The Site source repository also contains dist/assets/share-card.png (1200 x 630), robots.txt and sitemap.xml.
+The mirrored build_pages.py here includes the metadata; retrieve the full Site source for its binary assets.
+This fixes the missing sharing tags. Search indexing and social-network cache refresh are not guaranteed.
+See ../hardening-review.md for observed edge cases and remaining review requirements.
