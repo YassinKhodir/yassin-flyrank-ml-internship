@@ -1,5 +1,5 @@
 # Yassin portfolio build: saved tutor instructions
-Updated November 11, 2026. Owner: Yassin Khodir, CIS student at the University of the Incarnate Word.
+Updated November 12, 2026. Owner: Yassin Khodir, CIS student at the University of the Incarnate Word.
 
 ## Proof statement
 My projects show simple code, clear checks, and honest limits.
@@ -38,7 +38,11 @@ The phone assignment was submitted November 11; waiting for review.
 Cases and calculator assignments were also submitted for review with their learning-step gaps disclosed.
 ML interview, read-aloud review and independent student feature explanation are not claimed complete.
 Draw the Path was submitted November 11 with its tool/account substitutions disclosed; waiting for review.
-Last checked portal total: 125 estimated hours, not a student time record.
+Last checked portal total: 147 estimated hours, not a student time record. The 140 portal-estimate target has been reached.
+Hardening and Plant Your Flag are submitted for review. The genuine issued ML badge is installed.
+Site version 5 includes a working server-side page-view counter and public /analytics dashboard.
+Counts include assistant QA visits and are not unique people. No student clock hours were entered.
+The latest deployment has not had a newly reported physical-phone check; this was disclosed.
 
 ## Saved project and tool substitution
 Project name: Yassin portfolio build.
