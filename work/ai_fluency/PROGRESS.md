@@ -1,4 +1,4 @@
-# AI Fluency work status - latest update November 11, 2026
+# AI Fluency work status - latest update November 12, 2026
 
 All new code and documents are AI-assisted. No student time has been entered.
 Latest portal check, November 11: **22 assignment records across both tracks; both capstones accepted.**
@@ -14,8 +14,8 @@ The dated notes below preserve earlier states; they are not current missing-work
 | Content map | Claim, ten draft wording options, three-page map, two case outlines and honest gather-list; submitted October 12 | Reviewer response and student's review; three pages are now public |
 | FL-07 | Working local model run and saved trace inspected; 2:02 raw capture reviewed; build log updated; Windows 11 passed, 1 skipped | Submitted October 15 with the full-length smaller video copy; waiting for review |
 | Prompt Ladder | Six actual outputs and guided comparisons submitted October 20 | Any reviewer changes |
-| FL-04 | Current requirements inspected | No-code workflow, five real inputs, manual timing comparison, failure review |
-| FL-05 | Requirements inspected previously | Explainer and three real connector-call screenshots |
+| FL-04 | Four-stage instructions, five assistant-prepared examples and a new-input timing exercise saved | Accepted no-code setup, student-operated new-input run and actual manual/assisted timing; not submitted |
+| FL-05 | Official sources read by assistant; 656-word simple-English learning draft saved | Student's own explanation and three real tool-call screenshots; not submitted |
 | FL-09 | README, second evaluation and 3:54.5 narrated demo submitted November 10 | Waiting for review |
 | Portfolio cases, sitemap and claim | Cases submitted; digital sitemap, tutor context and saved AI review submitted November 11 | Review outcome; personal-review gaps and tool/account substitutions disclosed |
 | Maintenance plan | Exact next-case path, update steps, preserved repository context and real reminder; submitted October 13 | Reviewer response; Claude substitution disclosed |
@@ -278,3 +278,32 @@ reviewers may request those missing formats or account steps. No student sketch,
 separate Claude conversation, personal reflection, or actual work time was invented.
 The Documents page now shows 125 estimated hours, leaving 15 to the portal target.
 Submission is not approval; no manual work-time entry was created.
+
+
+## November 12: workflow preparation and evidence corrections
+The source-based study workflow is saved in workflow/README.md with gather,
+draft, check and format handoffs, plus all prompts and failure points.
+workflow/runs.md contains five assistant-generated examples using real public
+repository documents. They are not five student sessions or five external model
+calls. workflow/NEXT_TIMED_CHECK.md supplies a new save_new code excerpt and a
+manual/assisted comparison with blank timing fields. The no-code setup and
+student-operated comparison are still required; FL-04 was not submitted.
+
+EVALUATION.md now clearly labels first-round findings as historical and records
+the already-submitted FL-09 demo. The saved output evidence was not changed.
+The corrected file was fetched again. No new model run was made.
+
+The FL-05 brief was inspected. The assistant read the official Anthropic agents
+article and MCP intro/server concepts, then saved a 656-word learning draft at
+agent_basics/EXPLAINER_DRAFT.md. It applies the distinction to the prepared
+workflow, separates tools/resources/prompts and proposes one read-only source
+finder upgrade. Student authorship, reading or learning is not inferred.
+No screenshot of a tool call was fabricated; the three required captures and
+student's own wording remain missing. FL-05 was not submitted.
+
+The November 11 review follow-up was sent to Arijana through Gmail. On November
+12 she replied that both approved capstones allow document generation. A later
+sent clarification already copies Alen and identifies pending individual
+assignment reviews as the concern. No duplicate message was sent here.
+Last verified portal total remains 125 estimated hours; this preparation adds
+no qualifying submission or actual time entry.
