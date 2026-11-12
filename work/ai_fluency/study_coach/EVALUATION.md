@@ -1,7 +1,12 @@
 # Study coach: review of five saved results
 
-AI-assisted evidence review. This reviews existing saved outputs; no new model
-run, student reflection, work time, or second evaluation round is claimed.
+AI-assisted evidence review, updated November 12, 2026. The first and second
+evaluations below review saved outputs. This document update adds no model run,
+student reflection or work time.
+
+Current status: the second Windows evaluation is documented below. The narrated
+FL-09 demo was submitted November 10 and is waiting for review. Earlier findings
+are retained as the first-round comparison, not current missing-work claims.
 
 ## What was checked
 Read live_answer_01.json through live_answer_05.json against notes/sample.md.
@@ -17,20 +22,20 @@ that refusal happens before the model loop, even though its backend field says o
 | Conflicting dates | Lists October 12 and October 15 and says to ask which version is current. Does not directly ask the user; says choosing a date makes it the date. | Revise. Ask a direct question and avoid suggesting the user can choose the truth. |
 | Data leakage + unsafe instructions | Explains data leakage and says unsafe-instruction information is missing. One suspicious passage is blocked; it is not in the source list. | Filter worked for this planted example. Not a broad security test. |
 
-## Main finding
+## First-round finding
 The saved results support a small working notes coach. They do not justify a
 perfect score. The date-conflict case needs work. The filter catches one known
 pattern, not every possible harmful instruction.
 
-## A genuine next evaluation
+## First-round follow-up plan (subsequently performed)
 1. Improve the conflict handling without silently selecting a due date.
 2. Run the same five questions again on the real local model.
 3. Keep new outputs under new filenames; never replace this first evidence.
 4. Compare old and new answers, including any regression.
 5. Let the student check and explain the findings in their own words.
 
-Until that is done, these are first saved results, not completed v2 evaluation.
-The separate FL-09 narrated demo is also still missing.
+The second evaluation below documents the follow-up. At the first-round review,
+the narrated demo was still missing; it has since been submitted.
 
 ## Second evaluation: uploaded Windows results
 
@@ -60,4 +65,10 @@ due/deadline passages; it cannot decide official deadlines. Other formats and
 unretrieved notes may be missed. Heading citations do not verify every sentence.
 The model still sometimes answers before searching; that attempt was rejected
 by the program rather than saved as a successful run. Outputs can be repetitive
-or omit part of a compound question. The FL-09 narrated live video is still missing.
+or omit part of a compound question.
+
+### Narrated demo status, updated November 12
+The demo was submitted November 10 with the README and this evaluation:
+https://www.youtube.com/watch?v=7VjbMP6wQds
+The recording is 3 minutes 54.5 seconds. Submission is separate from approval.
+No new recording or evaluation run was made for this documentation correction.
