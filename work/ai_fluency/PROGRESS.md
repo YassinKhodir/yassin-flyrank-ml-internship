@@ -1,9 +1,9 @@
 # AI Fluency work status - latest update November 12, 2026
 
 All new code and documents are AI-assisted. No student time has been entered.
-Latest portal check, November 11: **22 assignment records across both tracks; both capstones accepted.**
+Latest portal check, November 12: **23 assignment records across both tracks; both capstones accepted.**
 The calculator feature and case package are now submitted for review. The case package's unfinished personal-review requirements were disclosed.
-The hour log shows **125 estimated hours**, leaving 15 to the portal target of 140.
+The hour log shows **127 estimated hours**, leaving 13 to the portal target of 140.
 The dated notes below preserve earlier states; they are not current missing-work claims.
 
 | Assignment | Actual evidence | What remains |
@@ -327,3 +327,20 @@ portfolio/hardening-review.md. Name/host web search returned no results, so
 search indexing is not claimed. The checkpoint still needs its remaining
 new-device/browser evidence and mentor or structured-peer review. Not submitted
 as a passed checkpoint; no new assignment hours or actual time entry added.
+
+
+## November 12: hardening report submitted for mentor review
+Break Your Own Site was submitted with the immutable report at
+commit d746d38d210d06c395e47499730e0c44b777a6b7, public website and PageSpeed
+report. FlyRank confirmed submission and waiting for review. Notes explicitly
+request the mentor review rather than claim it already happened; remaining
+new-device/browser coverage and unconfirmed indexing are disclosed. Submission
+does not establish checkpoint approval or clear future must-fixes.
+Documents now shows 127 estimated hours, a 13-hour portal-estimate gap to 140.
+The certificate screen shows 13/5 AI Fluency and 10/5 ML assignment records.
+No actual work time was entered.
+
+AI Fluency certificate generation is available, but its dialog requires the
+final internship end date and publishes that date on the verification record.
+The dialog was cancelled without issuing a certificate, because work continues
+and no final end date has been confirmed. ML certificate remains already issued.
