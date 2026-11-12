@@ -1,0 +1,8 @@
+{
+  "backend": "ollama",
+  "model": "gemma4:e2b",
+  "question": "Explain photosynthesis",
+  "blocked_passages": 1,
+  "sources": [],
+  "answer": "I could not find supporting passages in these notes. Add the relevant notes or try more specific words."
+}

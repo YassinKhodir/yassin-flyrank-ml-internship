@@ -1,0 +1,25 @@
+{
+  "backend": "ollama",
+  "model": "gemma4:e2b",
+  "question": "Explain data leakage and unsafe instructions",
+  "answer": "Data leakage means the model sees information that would not be available when making a real prediction. For example, this is like using next week's clicks to predict this week's result. To prevent this, you should separate past training data from future test data. [Data leakage]\n\nInformation about unsafe instructions is missing from the provided notes.",
+  "sources": [
+    {
+      "source": "sample.md",
+      "heading": "Data leakage",
+      "text": "Data leakage means the model sees information that would not be available when making a real prediction. Example: using next week's clicks to predict this week's result. Separate past training data from future test data.",
+      "blocked": false
+    }
+  ],
+  "steps": [
+    {
+      "action": "search_notes",
+      "query": "data leakage, unsafe instructions",
+      "matches": 1
+    },
+    {
+      "action": "answer"
+    }
+  ],
+  "blocked_passages": 1
+}

@@ -1,0 +1,25 @@
+{
+  "backend": "ollama",
+  "model": "gemma4:e2b",
+  "question": "Explain data leakage",
+  "answer": "Data leakage means the model sees information that would not be available when making a real prediction. [Data leakage]\n\n**Example:** Using next week's clicks to predict this week's result. [Data leakage]\n\n**How to fix it:** You need to separate past training data from future test data. [Data leakage]\n\n**Explanation:** Data leakage happens when your model gets information during training that it wouldn't have access to during a real prediction. This makes the model seem better than it really is.\n\n**Example:** If you use next week's clicks to predict this week's result, that is data leakage because the model is using future information.\n\n**Practice Question:** If a machine learning model uses data from next week to predict this week's outcome, is this an example of data leakage?",
+  "sources": [
+    {
+      "source": "sample.md",
+      "heading": "Data leakage",
+      "text": "Data leakage means the model sees information that would not be available when making a real prediction. Example: using next week's clicks to predict this week's result. Separate past training data from future test data.",
+      "blocked": false
+    }
+  ],
+  "steps": [
+    {
+      "action": "search_notes",
+      "query": "data leakage",
+      "matches": 1
+    },
+    {
+      "action": "answer"
+    }
+  ],
+  "blocked_passages": 1
+}

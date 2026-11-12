@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="980" height="720" viewBox="0 0 980 720" role="img" aria-labelledby="title desc">
+<title id="title">Portfolio sitemap: three pages, one review action</title>
+<desc id="desc">Home states the claim. Work supplies two cases and their evidence. About explains the owner and links back to Work. The reviewer inspects evidence and gives feedback through the existing GitHub pull request. Contact is an About section, not a fourth page.</desc>
+<defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L8,3 L0,6" fill="none" stroke="#0F766E" stroke-width="1.5"/></marker></defs>
+<rect width="980" height="720" fill="#FFFFFF"/>
+<g font-family="DejaVu Sans,sans-serif" fill="#111827">
+<text x="48" y="48" font-size="28" font-weight="bold">Three pages. One review action.</text>
+<text x="48" y="80" font-size="17">Claim: simple code, clear checks, honest limits.</text>
+<g fill="#F0FDFA" stroke="#0F766E" stroke-width="2">
+<rect x="48" y="130" width="380" height="145" rx="12"/>
+<rect x="48" y="350" width="380" height="180" rx="12"/>
+<rect x="540" y="130" width="390" height="145" rx="12"/>
+<rect x="540" y="350" width="390" height="180" rx="12"/>
+</g>
+<text x="70" y="165" font-size="23" font-weight="bold">Home /</text>
+<text x="70" y="199" font-size="17">Claim + two project previews</text>
+<text x="70" y="230" font-size="17">Action: view project evidence</text>
+<text x="70" y="389" font-size="23" font-weight="bold">Work /work</text>
+<text x="70" y="424" font-size="17">ML case + study-coach case</text>
+<text x="70" y="455" font-size="17">Problem, work, result, limits</text>
+<text x="70" y="486" font-size="17">Source, checks, demo + CTR tool</text>
+<text x="562" y="165" font-size="23" font-weight="bold">About /about</text>
+<text x="562" y="199" font-size="17">Short bio + AI-assistance note</text>
+<text x="562" y="230" font-size="17">Contact/review section: back to Work</text>
+<text x="562" y="389" font-size="23" font-weight="bold">Review project evidence</text>
+<text x="562" y="424" font-size="17">Open source, checks and demo</text>
+<text x="562" y="455" font-size="17">Then give feedback through GitHub</text>
+<text x="562" y="486" font-size="17">Existing pull request #1</text>
+<g fill="none" stroke="#0F766E" stroke-width="2" marker-end="url(#arrow)">
+<path d="M238 275 L238 337"/>
+<path d="M428 440 L526 440"/>
+<path d="M540 255 L480 255 L480 315 L350 315 L350 337"/>
+</g>
+<text x="48" y="592" font-size="18" font-weight="bold">Why no extra pages?</text>
+<text x="48" y="625" font-size="17">No separate blog, shop or booking page: none helps this reviewer inspect the work.</text>
+<text x="48" y="661" font-size="14" fill="#4B5563">AI-drawn digital map, November 11, 2026. Not a photograph of a student's hand sketch.</text>
+</g></svg>
